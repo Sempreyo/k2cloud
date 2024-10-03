@@ -1,0 +1,27 @@
+.title {
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: uppercase;
+
+	@include max(ti) {
+		font-size: 28px;
+	}
+
+	@include max(t) {
+		font-size: 24px;
+	}
+
+	span {
+		display: block;
+		font-size: 24px;
+		text-transform: lowercase;
+
+		@include max(ti) {
+			font-size: 22px;
+		}
+
+		@include max(t) {
+			font-size: 20px;
+		}
+	}
+}

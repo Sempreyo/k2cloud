@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 500;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	font-family: $mainFont;
+	background-color: $white;
+	color: $black;
+
+	/* iOS fix */
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-webkit-locale: auto;
+	white-space: normal;
+}
+
+main {
+	position: relative;
+	z-index: 1;
+}
+
+section {
+	transition: opacity 1s ease;
+}
+
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+svg {
+	width: auto;
+	height: auto;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button {
+	-webkit-appearance: none;
+}
+
+input,
+button,
+select,
+textarea {
+	font: inherit;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+}
+
+input,
+textarea {
+	padding: 0;
+	margin: 0;
+
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.d-none-desktop {
+	display: none;
+
+	@include max(tl) {
+		display: block;
+	}
+}
+
+.d-none-mobile {
+	display: block;
+
+	@include max(tl) {
+		display: none;
+	}
+}
+
+.d-none-tablet {
+	display: none;
+
+	@include max(ti) {
+		display: block;
+	}
+}
+
+.d-none-mobile-tablet {
+	display: block;
+
+	@include max(ti) {
+		display: none;
+	}
+}
+
+[hidden] {
+	display: none !important;
+}
+
+/* Swiper */
+.swiper-nav {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 10;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	pointer-events: none;
+
+	@include max(ti) {
+		display: none;
+	}
+
+	.swiper-btn-prev,
+	.swiper-btn-next {
+		position: relative;
+		cursor: pointer;
+		pointer-events: auto;
+
+		&:hover svg {
+			color: rgba($white, 0.7);
+		}
+
+		svg {
+			transition: 0.3s ease;
+		}
+	}
+
+	&--big {
+		.swiper-btn-prev,
+		.swiper-btn-next {
+			svg {
+				width: 30px;
+				height: 58px;
+
+				@include max(d) {
+					width: 25px;
+					height: 48px;
+				}
+			}
+		}
+	}
+
+	&--outside {
+		.swiper-btn-prev {
+			left: -50px;
+
+			@include max(d) {
+				left: -34px;
+			}
+		}
+
+		.swiper-btn-next {
+			right: -50px;
+
+			@include max(d) {
+				right: -34px;
+			}
+		}
+	}
+}
+
+.swiper-pagination {
+	display: none;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	@include max(ti) {
+		display: flex;
+	}
+
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: $white;
+		cursor: pointer;
+		transition: 0.3s ease;
+
+		&:hover {
+			background-color: rgba($white, 0.7);
+		}
+	}
+
+	.swiper-pagination-bullet-active {
+		width: 14px;
+		height: 14px;
+	}
+
+	&--black {
+		.swiper-pagination-bullet {
+			background-color: $black;
+
+			&:hover {
+				background-color: rgba($black, 0.7);
+			}
+		}
+	}
+}
