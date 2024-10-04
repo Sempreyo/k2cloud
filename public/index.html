@@ -9,7 +9,23 @@
     <title>K2 Cloud</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logos"><a class="header__logo" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg></a><a class="header__logo-cn" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#logo-cn"></use>
+            </svg></a></div>
+        <ul class="header__menu">
+          <li><a href="#"><span>статьи</span></a></li>
+          <li><a href="#"><span>тренды</span></a></li>
+          <li><a href="#"><span>интервью</span></a></li>
+          <li><a href="#"><span>решения</span></a></li>
+        </ul>
+      </div>
+    </header>
     <main class="main">
       <!--section.hero
       .hero__bg
@@ -17,6 +33,11 @@
       	a.hero__logo(href='#', target='_blank')
       		+icon('logo')(width='108', height='50')
       -->
+      <section class="articles"></section>
+      <section class="trends"></section>
+      <section class="interview"></section>
+      <section class="solutions"></section>
+      <section class="feedback"></section>
     </main>
     <footer class="footer"></footer>
   </body>

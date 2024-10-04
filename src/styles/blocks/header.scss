@@ -4,6 +4,67 @@
 	position: relative;
 	z-index: 10;
 	width: 100%;
-	height: 145px;
-	padding: 45px 0;
+	padding: 80px 0;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	&__logos {
+		display: flex;
+		align-items: center;
+		gap: 48px;
+	}
+
+	&__logo {
+		svg {
+			width: 153px;
+			height: 23px;
+		}
+	}
+	
+	&__logo-cn {
+		svg {
+			width: 114px;
+			height: 22px;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: 42px;
+
+		li {
+			a {
+				position: relative;
+				font-family: $secondFont;
+				font-weight: 300;
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 0;
+					inset: -5px -5px -10px;
+					border-radius: 5px;
+					background-color: $color-main;
+					transition: width 0.2s ease, top 0.2s ease 0.2s;
+				}
+
+				&:hover {
+					&::before {
+						width: calc(100% + 10px);
+						top: 23px;
+					}
+				}
+			}
+
+			span {
+				position: relative;
+			}
+		}
+	}
 }
