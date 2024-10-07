@@ -1,14 +1,19 @@
 .articles {
-	padding-top: 77px;
-
 	&__wrapper {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 8px;
 		margin-top: 38px;
+
+		@include max(ti) {
+			flex-direction: column;
+		}
 	}
 
 	&__card {
 		width: calc(50% - 4px);
+
+		@include max(ti) {
+			width: 100%;
+		}
 	}
 }

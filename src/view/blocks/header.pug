@@ -5,17 +5,21 @@ header.header
                 +icon("logo")
             a.header__logo-cn(href="#")
                 +icon("logo-cn")
-        ul.header__menu
-            li
-                a(href="#")
-                    span статьи
-            li
-                a(href="#")
-                    span тренды
-            li
-                a(href="#")
-                    span интервью
-            li
-                a(href="#")
-                    span решения
-        
+        .header__burger
+            .header__burger-line
+        .header__menu-wrapper
+            .header__menu-close
+                +icon('close')(width='30', height='30')
+            ul.header__menu
+                li
+                    a.anchor(href="#articles")
+                        span статьи
+                li
+                    a.anchor(href="#trends")
+                        span тренды
+                li
+                    a.anchor(href="#interview")
+                        span интервью
+                li
+                    a.anchor(href="#solutions")
+                        span решения

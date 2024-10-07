@@ -1,33 +1,91 @@
 .trends {
 	position: relative;
 	padding-top: 72px;
+	padding-bottom: 171px;
+	overflow: hidden;
+
+	@include max(ti) {
+		padding-top: 40px;
+		padding-bottom: 100px;
+	}
+
+	@include max(t) {
+		padding-bottom: 40px;
+	}
 
 	&__bg {
 		position: absolute;
-		top: 26%;
+		top: 21%;
 		left: 0;
 		z-index: -1;
+		width: 100%;
+
+		@include max(tl) {
+			top: 30%;
+		}
+
+		@include max(ti) {
+			top: 23%;
+		}
+
+		img {
+			max-width: unset;
+			margin: 0 auto;
+
+			@include max(ti) {
+				position: absolute;
+				right: 18px;
+			}
+		}
 	}
 
 	&__top {
 		display: flex;
 		gap: 24px;
+
+		@include max(tl) {
+			flex-direction: column;
+		}
 	}
 
 	&__col {
 		&:first-child {
 			max-width: 478px;
+
+			@include max(tl) {
+				max-width: 100%;
+			}
 		}
 
 		&:last-child {
 			position: relative;
 			right: -32px;
+			max-width: 546px;
+			width: 100%;
+
+			@include max(d) {
+				right: 0;
+			}
+
+			@include max(tl) {
+				display: flex;
+				max-width: 100%;
+			}
+
+			@include max(t) {
+				flex-direction: column;
+			}
 		}
 	}
 
 	&__title {
 		max-width: 280px;
 		padding-top: 24px;
+
+		@include max(tl) {
+			max-width: 100%;
+			padding-top: 0;
+		}
 	}
 
 	&__text {
@@ -36,37 +94,131 @@
 		font-size: 24px;
 		line-height: 1;
 		margin-top: 28px;
+
+		@include max(d) {
+			font-size: fluid(20, 24, 992, 1280);
+		}
+
+		@include max(tl) {
+			font-size: fluid(18, 20, 768, 992);
+		}
+
+		@include max(ti) {
+			font-size: fluid(14, 18, 0, 768);
+			margin-top: 10px;
+		}
+
+		br {
+			@include max(d) {
+				display: none;
+			}
+		}
 	}
 
 	&__year-2 {
 		margin-left: 20px;
 		margin-top: -40px;
+
+		@include max(tl) {
+			margin-left: -60px;
+			margin-top: 5px;
+		}
+
+		@include max(ti) {
+			margin-left: -40px;
+		}
+
+		@include max(t) {
+			margin-left: 20px;
+			margin-top: -40px;
+		}
+
+		@include max(400) {
+			margin-left: 10px;
+			margin-top: -20px;
+		}
 	}
 
 	&__button {
 		margin-top: 47px;
+
+		@include max(ti) {
+			margin-top: 20px;
+		}
 	}
 
 	&__bottom {
 		margin-top: 100px;
+
+		@include max(tl) {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			margin-top: 60px;
+		}
+
+		@include max(t) {
+			margin-top: 30px;
+		}
 	}
 
 	&__row {
 		display: flex;
 
+		@include max(ti) {
+			justify-content: center;
+		}
+
+		@include max(t) {
+			flex-direction: column;
+		}
+
 		&--1 {
 			justify-content: flex-end;
 			gap: 72px;
+
+			@include max(ti) {
+				justify-content: center;
+				gap: 10px;
+			}
+
+			@include max(t) {
+				gap: 30px;
+			}
 		}
 
 		&--2 {
 			margin-top: -45px;
+
+			@include max(tl) {
+				margin-top: 0;
+				padding-left: 60px;
+			}
+
+			@include max(ti) {
+				padding-left: 0;
+			}
 		}
 
 		&--3 {
 			gap: 80px;
 			margin-top: 9px;
 			padding-left: 173px;
+
+			@include max(tl) {
+				gap: 50px;
+				margin-top: 0;
+				padding-left: 20px;
+			}
+
+			@include max(ti) {
+				gap: 10px;
+				padding-left: 0;
+			}
+
+			@include max(t) {
+				gap: 30px;
+			}
 		}
 	}
 }

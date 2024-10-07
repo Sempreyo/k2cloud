@@ -1,10 +1,24 @@
 .hero {
-	padding-top: 10px;
+	padding-top: 200px;
+	padding-bottom: 77px;
+	overflow: hidden;
+
+	@include max(ti) {
+		padding-top: 120px;
+		padding-bottom: 40px;
+	}
+
+	@include max(t) {
+		padding-top: 162px;
+	}
 
 	&__container {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 8px;
+
+		@include max(ti) {
+			flex-direction: column;
+		}
 	}
 
 	&__col {
@@ -12,6 +26,40 @@
 		flex-direction: column;
 		gap: 8px;
 		width: calc(50% - 4px);
+
+		@include max(d) {
+			width: auto;
+		}
+
+		@include max(ti) {
+			width: 100%;
+		}
+
+		&:first-child {
+			position: relative;
+			z-index: 1;
+
+			@include max(d) {
+				width: calc(100% - 528px);
+			}
+
+			@include max(ti) {
+				flex-direction: column;
+				width: 100%;
+			}
+		}
+
+		&:last-child {
+			@include max(d) {
+				max-width: 520px;
+				width: 100%;
+			}
+
+			@include max(ti) {
+				align-items: center;
+				margin: 0 auto;
+			}
+		}
 	}
 
 	&__title,
@@ -24,36 +72,114 @@
 		font-weight: 400;
 		font-size: 105px;
 		line-height: 1.2;
+		text-align: center;
 		padding: 29px 41px;
+		overflow: hidden;
+
+		@include max(d) {
+			font-size: fluid(90, 105, 992, 1280);
+			padding: 29px;
+		}
+
+		@include max(tl) {
+			font-size: fluid(35, 90, 768, 992);
+		}
+
+		@include max(ti) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			width: 100%;
+			font-size: fluid(35, 90, 0, 768);
+		}
 
 		span {
 			color: $white;
+		}
+
+		.char {
+			transform: translateY(calc(100% + 30px));
+			transition: 0.3s ease;
 		}
 	}
 
 	&__bottom {
 		padding: 42px 30px 110px 42px;
+
+		@include max(d) {
+			padding: 29px;
+		}
+
+		@include max(ti) {
+			padding: 30px 41px;
+		}
 	}
 
 	&__subtitle {
 		font-size: 46px;
 		line-height: 1;
+
+		@include max(d) {
+			font-size: fluid(30, 46, 992, 1280);
+		}
+
+		@include max(tl) {
+			font-size: fluid(25, 30, 768, 992);
+		}
+
+		@include max(ti) {
+			font-size: fluid(20, 30, 0, 768);
+			text-align: center;
+		}
+
+		br {
+			@include max(d) {
+				display: none;
+			}
+		}
 	}
 
 	&__text {
 		font-size: 24px;
 		line-height: 1.3;
 		margin-top: 20px;
+
+		@include max(d) {
+			font-size: fluid(20, 24, 992, 1280);
+		}
+
+		@include max(tl) {
+			font-size: fluid(18, 20, 768, 992);
+		}
+
+		@include max(ti) {
+			font-size: fluid(14, 18, 0, 768);
+			text-align: center;
+		}
 	}
 
 	&__bg {
 		position: relative;
+
+		picture:first-child {
+			@include max(t) {
+				display: none;
+			}
+		}
 	}
 
 	&__bg-astronaut {
 		position: absolute;
 		inset: -56px 0px -24px -91px;
-		max-width: unset;
+		max-width: 670px;
 		width: calc(100% + 150px);
+
+		@include max(t) {
+			position: relative;
+			inset: unset;
+			max-width: 670px;
+			width: 100%;
+		}
 	}
 }

@@ -111,39 +111,53 @@ ol {
 }
 
 .d-none-desktop {
-	display: none;
+	display: none !important;
 
 	@include max(tl) {
-		display: block;
+		display: block !important;
 	}
 }
 
 .d-none-mobile {
-	display: block;
+	display: block !important;
 
 	@include max(tl) {
-		display: none;
+		display: none !important;
 	}
 }
 
 .d-none-tablet {
-	display: none;
+	display: none !important;
 
 	@include max(ti) {
-		display: block;
+		display: inline-flex !important;
 	}
 }
 
 .d-none-mobile-tablet {
-	display: block;
+	display: inline-flex !important;
 
 	@include max(ti) {
-		display: none;
+		display: none !important;
 	}
 }
 
 [hidden] {
 	display: none !important;
+}
+
+/* Mobile-menu */
+[data-state="mobile-menu"] {
+	overflow: hidden;
+
+	.header__menu-wrapper {
+		transform: translateX(0);
+	}
+}
+
+/* When hystmodal opened */
+.hystmodal__opened .header {
+	transform: translateY(-100%);
 }
 
 /* Swiper */
@@ -181,10 +195,19 @@ ol {
 }
 
 .swiper-pagination {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 36px;
+
+	@include max(tl) {
+		gap: 20px;
+	}
+
+	@include max(ti) {
+		gap: 10px;
+	}
 
 	&__bullet {
 		display: flex;
@@ -192,10 +215,25 @@ ol {
 		justify-content: center;
 		width: 94px;
 		height: 94px;
+		background: transparent;
+		opacity: 1;
 		border-radius: 28px;
 		border: 4px solid $color-main;
 		cursor: pointer;
 		transition: 0.3s ease;
+
+		@include max(tl) {
+			width: 70px;
+			height: 70px;
+			border-radius: 24px;
+		}
+
+		@include max(ti) {
+			width: 50px;
+			height: 50px;
+			border-radius: 18px;
+			border: 2px solid $color-main;
+		}
 
 		&:hover {
 			background-color: $color-main;
@@ -228,7 +266,7 @@ ol {
 }
 
 /* Select2 */
-.select2-container {
+.js-custom-select ~ .select2-container {
 	width: 100% !important;
 }
 
@@ -250,7 +288,7 @@ ol {
 		font-weight: 300;
 		font-size: 16px;
 		line-height: 1;
-		padding: 0 40px 0 24px;
+		padding: 0 70px 0 24px;
 	}
 
 	.select2-selection__arrow {

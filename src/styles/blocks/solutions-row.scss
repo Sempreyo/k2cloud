@@ -11,9 +11,21 @@
 	overflow: hidden;
 	padding: 26px 40px;
 
+	@include max(t) {
+		padding: 26px 20px;
+	}
+
 	&--list {
 		justify-content: flex-start;
 		gap: 40px;
+
+		@include max(ti) {
+			gap: 20px;
+		}
+
+		@include max(t) {
+			gap: 10px;
+		}
 
 		#{$parent}__item {
 			&:first-child {
@@ -22,6 +34,13 @@
 				height: 44px;
 				border-radius: 15px;
 				background-color: $white;
+
+				@include max(t) {
+					min-width: 20px;
+					width: 20px;
+					height: 20px;
+					border-radius: 5px;
+				}
 			}
 
 			&:last-child {
@@ -29,6 +48,10 @@
 				font-family: $secondFont;
 				font-weight: 300;
 				font-size: 16px;
+
+				@include max(t) {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -40,6 +63,10 @@
 				font-family: $secondFont;
 				font-weight: 300;
 				font-size: 16px;
+
+				@include max(t) {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -50,17 +77,33 @@
 			font-family: $secondFont;
 			font-weight: 300;
 			font-size: 16px;
+
+			@include max(t) {
+				font-size: 14px;
+			}
 		}
 
 		&:last-child {
 			width: calc(44% - 10px);
 			font-size: 24px;
 			line-height: 1;
+
+			@include max(t) {
+				font-size: 18px;
+			}
 		}
 	}
 
 	&__string {
 		font-size: 48px;
+
+		@include max(tl) {
+			font-size: 36px;
+		}
+
+		@include max(t) {
+			font-size: 24px;
+		}
 
 		&--small {
 			font-size: 18px;

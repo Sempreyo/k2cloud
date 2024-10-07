@@ -3,6 +3,10 @@
 		font-family: $secondFont;
 		font-weight: 700;
 		font-size: 16px;
+
+		@include max(t) {
+			font-size: 14px;
+		}
 	}
 
 	&__text {
@@ -10,5 +14,9 @@
 		font-weight: 300;
 		font-size: 16px;
 		margin-top: 4px;
+
+		@include max(t) {
+			font-size: 14px;
+		}
 	}
 }

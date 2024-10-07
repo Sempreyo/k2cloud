@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				slidesPerView: 1,
 				spaceBetween: 10,
 				loop: true,
+				autoHeight: true,
 				navigation: {
 					nextEl: solutionsCarouselNext,
 					prevEl: solutionsCarouselPrev,

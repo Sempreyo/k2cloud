@@ -1,6 +1,13 @@
 .trends-cell {
 	$parent: &;
 
+	@include max(ti) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+	}
+
 	&__title {
 		font-size: 18px;
 		line-height: 1;
@@ -11,41 +18,77 @@
 		gap: 5px;
 		margin-top: 4px;
 
+		@include max(ti) {
+			margin-top: 0;
+		}
+
 		&--1 {
 			grid-template-columns: repeat(4, 110px);
+
+			@include max(tl) {
+				grid-template-columns: repeat(4, 80px);
+			}
+
+			@include max(ti) {
+				grid-template-columns: repeat(3, 80px);
+			}
 
 			#{$parent}__item {
 				&:nth-child(4) {
 					grid-row-start: 2;
 					grid-column-start: 2;
+
+					@include max(ti) {
+						grid-row-start: inherit;
+						grid-column-start: inherit;
+					}
 				}
 
 				&:nth-child(5) {
 					grid-row-start: 2;
 					grid-column-start: 3;
+
+					@include max(ti) {
+						grid-row-start: inherit;
+						grid-column-start: inherit;
+					}
 				}
 
 				&:nth-child(6) {
 					grid-row-start: 2;
 					grid-column-start: 4;
+
+					@include max(ti) {
+						grid-row-start: inherit;
+						grid-column-start: inherit;
+					}
 				}
 			}
 		}
 
 		&--2 {
 			grid-template-columns: repeat(3, 110px);
+
+			@include max(tl) {
+				grid-template-columns: repeat(3, 80px);
+			}
 		}
 
 		&--3 {
 			grid-template-columns: repeat(1, 110px);
+
+			@include max(tl) {
+				grid-template-columns: repeat(1, 80px);
+			}
 		}
 
-		&--4 {
-			grid-template-columns: repeat(2, 110px);
-		}
-
+		&--4,
 		&--5 {
 			grid-template-columns: repeat(2, 110px);
+
+			@include max(tl) {
+				grid-template-columns: repeat(2, 80px);
+			}
 		}
 	}
 
@@ -58,6 +101,12 @@
 		border-radius: 26px;
 		background-color: $color-main;
 		transition: 0.3s ease;
+
+		@include max(tl) {
+			width: 80px;
+			height: 80px;
+			padding: 20px;
+		}
 
 		&:hover {
 			background-color: $white;

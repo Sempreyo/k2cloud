@@ -6,6 +6,10 @@
 	padding: 8px 8px 8px 38px;
 	color: $white;
 
+	@include max(ti) {
+		padding: 30px 8px;
+	}
+
 	&__bg {
 		position: absolute;
 		bottom: 0;
@@ -18,6 +22,10 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		gap: 20px;
+
+		@include max(ti) {
+			flex-direction: column;
+		}
 	}
 
 	&__col {
@@ -28,16 +36,37 @@
 		&:first-child {
 			width: calc(38% - 10px);
 			padding: 22px 0 28px;
+
+			@include max(ti) {
+				width: 100%;
+				padding: 0 20px;
+			}
 		}
 
 		&:last-child {
 			gap: 9px;
 			width: calc(58% - 10px);
+
+			@include max(ti) {
+				width: 100%;
+			}
 		}
 	}
 
 	&__title {
 		font-size: 32px;
+
+		@include max(d) {
+			font-size: fluid(28, 32, 992, 1280);
+		}
+
+		@include max(tl) {
+			font-size: fluid(24, 28, 768, 992);
+		}
+
+		@include max(ti) {
+			font-size: fluid(16, 24, 0, 768);
+		}
 	}
 
 	&__text {
@@ -45,9 +74,20 @@
 		font-weight: 300;
 		font-size: 16px;
 		margin-top: 8px;
+
+		@include max(ti) {
+			font-size: 14px;
+		}
+
+		br {
+			@include max(d) {
+				display: none;
+			}
+		}
 	}
 
 	&__link {
+		position: relative;
 		display: flex;
 		align-items: center;
 		gap: 10px;
@@ -55,6 +95,10 @@
 		font-weight: 700;
 		font-size: 16px;
 		color: $color-main;
+
+		@include max(ti) {
+			margin: 40px 20px 0;
+		}
 
 		&:hover svg {
 			transform: translateX(6px);

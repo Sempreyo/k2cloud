@@ -12,17 +12,17 @@ block main
 			.hero__col
 				h1.hero__title K2 <span>Cloud</span>
 				.hero__bottom
-					.hero__subtitle Будущее бизнеса — <br> в облаках
-					.hero__text Бизнес-ориентированное облако и команда экспертов с опытом интеграционных проектов
+					.hero__subtitle(data-aos='fade-up', data-aos-delay='300', data-aos-once='true') Будущее бизнеса — <br> в облаках
+					.hero__text(data-aos='fade-up', data-aos-delay='500', data-aos-once='true') Бизнес-ориентированное облако и команда экспертов с опытом интеграционных проектов
 			.hero__col
 				.hero__bg
 					+picture('bg-grid', 'png')
 					+picture('astronaut', 'png')(class='hero__bg-astronaut')
-	section.articles
+	section#articles.articles
 		.container
-			+title('Статьи')
+			+title('Статьи')(data-aos='fade-up', data-aos-once='true')
 			.articles__wrapper
-				.articles__card.articles-card
+				.articles__card.articles-card(data-aos='fade-left', data-aos-once='true')
 					a.articles-card__link(href='#', target='_blank')
 					.articles-card__filler
 						+picture('articles/filler', 'png')
@@ -36,7 +36,7 @@ block main
 					.articles-card__read
 						span читать
 						+icon('arrow-right')(width='14', height='18')
-				.articles__card.articles-card.articles-card--2
+				.articles__card.articles-card.articles-card--2(data-aos='fade-right', data-aos-once='true')
 					a.articles-card__link(href='#', target='_blank')
 					.articles-card__filler
 						+picture('articles/filler', 'png')
@@ -50,14 +50,14 @@ block main
 					.articles-card__read
 						span читать
 						+icon('arrow-right')(width='14', height='18')
-	section.trends
+	section#trends.trends
 		.container
 			.trends__bg
 				+picture('trends/bg-trends', 'png')
 			.trends__top
 				.trends__col
-					+title('Тренды развития ИТ', 'trends__title')
-					.trends__text На основе аналитических данных <br> по мировому и российскому ИТ-рынкам
+					+title('Тренды развития ИТ', 'trends__title')(data-aos='fade-up', data-aos-once='true')
+					.trends__text(data-aos='fade-up', data-aos-delay='300', data-aos-once='true') На основе аналитических данных <br> по мировому и российскому ИТ-рынкам
 					+button('Получить полный материал', 'trends__button', '#')
 				.trends__col
 					.trends__year-1
@@ -113,11 +113,11 @@ block main
 									path(d='M29.1392 37.9204H20.439C18.8257 37.9204 17.7022 38.2757 17.0684 38.9863C16.4346 39.6777 16.1178 41.0125 16.1178 42.9907C16.1178 44.9688 16.4346 46.3132 17.0684 47.0238C17.7022 47.7152 18.8257 48.0609 20.439 48.0609H21.8218C22.6669 48.0609 23.0894 47.6384 23.0894 46.7934V42.4145H29.6001V49.9047C29.6001 50.9034 29.3216 51.6812 28.7647 52.2382C28.2077 52.7951 27.4299 53.0736 26.4312 53.0736H18.2496C15.0038 53.0736 12.7184 52.2862 11.3932 50.7113C10.0872 49.1173 9.4342 46.5437 9.4342 42.9907C9.4342 39.4376 10.0872 36.8737 11.3932 35.2988C12.7184 33.7047 15.0038 32.9077 18.2496 32.9077H29.1392V37.9204ZM38.4087 53.0736H31.898V36.0766C31.898 35.0779 32.1765 34.3001 32.7335 33.7432C33.2904 33.1862 34.0683 32.9077 35.0669 32.9077H46.5039C48.6933 32.9077 50.201 33.4839 51.0268 34.6362C51.8527 35.7886 52.2656 37.5939 52.2656 40.0522C52.2656 42.5105 51.8527 44.3255 51.0268 45.497C50.201 46.6685 48.6933 47.2543 46.5039 47.2543H38.4087V53.0736ZM38.4087 42.2416H42.9893C43.8919 42.2416 44.5449 42.088 44.9482 41.7807C45.3708 41.4542 45.582 40.878 45.582 40.0522C45.582 39.2264 45.3804 38.6694 44.977 38.3813C44.5737 38.074 43.9111 37.9204 42.9893 37.9204H39.6763C38.8312 37.9204 38.4087 38.3429 38.4087 39.1879V42.2416ZM61.9195 47.2255C62.4957 47.7825 63.3792 48.0609 64.5699 48.0609C65.7607 48.0609 66.6345 47.7825 67.1915 47.2255C67.7677 46.6685 68.0557 45.7563 68.0557 44.4887V32.9077H74.5664V45.0073C74.5664 48.0417 73.731 50.1832 72.0601 51.4315C70.4084 52.6799 67.9117 53.3041 64.5699 53.3041C61.2281 53.3041 58.7218 52.6799 57.0509 51.4315C55.3992 50.1832 54.5734 48.0417 54.5734 45.0073V32.9077H61.0841V44.4887C61.0841 45.7563 61.3626 46.6685 61.9195 47.2255Z')
 							a.trends-cell__item(href='#', data-hystmodal='#trend14')
 								+icon('trends14')(width='69', height='84')
-	section.interview
+	section#interview.interview
 		.container
-			+title('Интервью с экспертами', 'title--big')
+			+title('Интервью с экспертами', 'title--big')(data-aos='fade-up', data-aos-once='true')
 			.interview__wrapper
-				.interview__card.interview-card
+				.interview__card.interview-card(data-aos='fade-left', data-aos-once='true')
 					a.interview-card__link(href='#', target='_blank')
 					.interview-card__image
 						+picture('interview/1', 'png')
@@ -133,7 +133,7 @@ block main
 							.interview-card__name Сергей Зинкевич
 							.interview-card__position Директор K2 Cloud
 						.interview-card__read Читать интервью
-				.interview__card.interview-card
+				.interview__card.interview-card(data-aos='fade-right', data-aos-once='true')
 					a.interview-card__link(href='#', target='_blank')
 					.interview-card__image
 						+picture('interview/2', 'png')
@@ -149,9 +149,9 @@ block main
 							.interview-card__name Кирилл Бойко
 							.interview-card__position Технический директор K2 Cloud
 						.interview-card__read Читать интервью
-	section.solutions
+	section#solutions.solutions
 		.container
-			+title('Наш портфель решений', 'title--big')
+			+title('Наш портфель решений', 'title--big')(data-aos='fade-up', data-aos-once='true')
 			.solutions__slider-outer
 				.solutions__slider.swiper
 					.swiper-wrapper
@@ -163,7 +163,7 @@ block main
 									.solutions-card__content
 										.solutions-card__title К2 Облако
 										.solutions-card__text Надежная и производительная среда собственной разработки для быстрого развертывания корпоративных приложений и сервисов с тремя зонами доступности на базе сети дата-центров
-									a.solutions-card__link(href='#', target='_blank')
+									a.solutions-card__link.d-none-mobile-tablet(href='#', target='_blank')
 										+icon('arrow-right')(width='20', height='25')
 										span Подробнее
 								.solutions-card__col
@@ -176,6 +176,9 @@ block main
 									.solutions-row
 										.solutions-row__item Время реакции <br> 10 мин
 										.solutions-row__item <span class="solutions-row__string--small">SLA</span> <br> <span class="solutions-row__string">99,95%</span>
+							a.solutions-card__link.d-none-tablet(href='#', target='_blank')
+								+icon('arrow-right')(width='20', height='25')
+								span Подробнее
 						.solutions-card.swiper-slide
 							.solutions-card__bg
 								+picture('solutions/2', 'png')
@@ -184,7 +187,7 @@ block main
 									.solutions-card__content
 										.solutions-card__title Локализация
 										.solutions-card__text Бесперебойная миграция бизнеса с международных платформ в ИТ-контур <br> на базе К2 Облака
-									a.solutions-card__link(href='#', target='_blank')
+									a.solutions-card__link.d-none-mobile-tablet(href='#', target='_blank')
 										+icon('arrow-right')(width='20', height='25')
 										span Подробнее
 								.solutions-card__col
@@ -197,6 +200,9 @@ block main
 									.solutions-row.solutions-row--list
 										.solutions-row__item
 										.solutions-row__item Комплексная услуга из одного окна – инфраструктура и core-сервисы, кибербезопасность и бизнес-приложения.
+							a.solutions-card__link.d-none-tablet(href='#', target='_blank')
+								+icon('arrow-right')(width='20', height='25')
+								span Подробнее
 						.solutions-card.swiper-slide
 							.solutions-card__bg
 								+picture('solutions/3', 'png')
@@ -207,7 +213,7 @@ block main
 										.solutions-card__text Сервис хранения и аналитики данных: вычислительные ресурсы К2 Облака, лицензии Arenadata, поддержка 24/7 с ежемесячной оплатой
 										.solutions-card__logo
 											+picture('solutions/logo', 'png')
-									a.solutions-card__link(href='#', target='_blank')
+									a.solutions-card__link.d-none-mobile-tablet(href='#', target='_blank')
 										+icon('arrow-right')(width='20', height='25')
 										span Подробнее
 								.solutions-card__col
@@ -220,6 +226,9 @@ block main
 									.solutions-row.solutions-row--list
 										.solutions-row__item
 										.solutions-row__item Готовый сервис без капитальных затрат: не нужно покупать оборудование, лицензии и вендорскую поддержку
+							a.solutions-card__link.d-none-tablet(href='#', target='_blank')
+								+icon('arrow-right')(width='20', height='25')
+								span Подробнее
 						.solutions-card.swiper-slide
 							.solutions-card__bg
 								+picture('solutions/4', 'png')
@@ -228,7 +237,7 @@ block main
 									.solutions-card__content
 										.solutions-card__title 1С в Облаке
 										.solutions-card__text Решение под ключ: аудит, размещение систем от 100 пользователей, предоставление лицензий, техподдержка
-									a.solutions-card__link(href='#', target='_blank')
+									a.solutions-card__link.d-none-mobile-tablet(href='#', target='_blank')
 										+icon('arrow-right')(width='20', height='25')
 										span Подробнее
 								.solutions-card__col
@@ -238,6 +247,9 @@ block main
 										.solutions-row__item Импортозамещение ERP: <br> от подбора конфигурации и проектирования <br> до внедрения и настройки
 									.solutions-row.solutions-row--single
 										.solutions-row__item Быстрый старт удаленной работы <br> с различными версиями баз 1С
+							a.solutions-card__link.d-none-tablet(href='#', target='_blank')
+								+icon('arrow-right')(width='20', height='25')
+								span Подробнее
 						.solutions-card.swiper-slide
 							.solutions-card__bg
 								+picture('solutions/5', 'png')
@@ -246,7 +258,7 @@ block main
 									.solutions-card__content
 										.solutions-card__title Администрирование ИТ-инфраструктуры
 										.solutions-card__text Круглосуточное сопровождение вашей ИТ-инфраструктуры, решение задач <br> по ее изменению и развитию
-									a.solutions-card__link(href='#', target='_blank')
+									a.solutions-card__link.d-none-mobile-tablet(href='#', target='_blank')
 										+icon('arrow-right')(width='20', height='25')
 										span Подробнее
 								.solutions-card__col
@@ -257,6 +269,9 @@ block main
 										.solutions-row__item <span class="solutions-row__string">до 99,99%</span>
 									.solutions-row.solutions-row--single
 										.solutions-row__item Сопровождение инфраструктуры на всех уровнях: оборудование, ВМ, ОС, базы данных, СРК
+							a.solutions-card__link.d-none-tablet(href='#', target='_blank')
+								+icon('arrow-right')(width='20', height='25')
+								span Подробнее
 				.solutions__nav.swiper-nav
 					.swiper-btn-prev
 						+icon('chevron-left')(width='28', height='62')
@@ -265,7 +280,7 @@ block main
 			.solutions__pagination.swiper-pagination
 	section.feedback
 		.container
-			+title('Заполните форму и получите полную версию материала: <br> <span>отраслевые ИТ-тренды 2024</span>', 'title--big feedback__title')
+			+title('Заполните форму и получите полную версию материала: <br> <span>отраслевые ИТ-тренды 2024</span>', 'title--big feedback__title')(data-aos='fade-up', data-aos-once='true')
 			form.feedback__form
 				.feedback__field.field
 					input(type='text', name='fullName', placeholder='Имя и Фамилия')
@@ -290,7 +305,8 @@ block modals
 	#trend1.hystmodal(aria-hidden='true')
 		.hystmodal__wrap
 			.hystmodal__window(role='dialog', aria-modal='true')
-				//button.hystmodal__close(data-hystclose) Закрыть
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
 				.modal
 					.modal__top
 						.modal__content
@@ -326,10 +342,234 @@ block modals
 								.modal__tag #ритейл
 								.modal__tag #Транспорт
 								.modal__tag #Финансы
+	#trend2.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Мультиоблачная/ <br> гибридная среда
+							.modal__text.
+								Мультиоблако объединяет облачные инфраструктуры от разных провайдеров, гибридная среда интегрирует
+								частное и публичное облака.
+						.modal__info
+							.modal__years
+								span 2027
+								span 2030
+							.modal__icon
+								+icon('trends2')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Рост стоимости инфраструктуры
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text В публичном облаке более широкий <br> функционал в сравнении с частным облаком
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Пересмотр подходов в риск-менеджменте <br> и необходимость «второго плеча», <br> требования ИБ
+								.modal-grid-item
+									.modal-grid-item__number 04
+									.modal-grid-item__text Разные модели тарификации и продуктовые линейки у разных провайдеров, возможность существенной экономии
+						.modal__col
+							.modal__tags
+								.modal__tag #Промышленность
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ИТ
+								.modal__tag #Строительство
+								.modal__tag #ритейл
+								.modal__tag #Транспорт
+								.modal__tag #Финансы
+								.modal__tag #Нефтегаз
+								.modal__tag #Химия и нефтехимия
+	#trend3.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Infrastructure as Code (IaC)
+							.modal__text.
+								Создание, управление и автоматизация инфраструктуры с помощью кода.
+						.modal__info
+							.modal__years
+								span 2025
+								span 2030
+							.modal__icon
+								+icon('trends3')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Поддержка инструментов IaC <br> в облаках крупнейших провайдеров
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Высокие трудозатраты и риски <br> на развертывание инфраструктуры <br> без автоматизации
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Рост популярности мультиоблачных <br> и гибридных сред, более простое <br> управление ими с помощью IaC
+						.modal__col
+							.modal__tags
+								.modal__tag #Промышленность
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ИТ
+								.modal__tag #Строительство
+								.modal__tag #ритейл
+								.modal__tag #Транспорт
+								.modal__tag #Финансы
+								.modal__tag #Нефтегаз
+								.modal__tag #Химия и нефтехимия
+	#trend4.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Управление затратами <br> на инфраструктуру
+							.modal__text.
+								Практики FinOps (управление затратами на облачные сервисы) и ТСО (оценка совокупной стоимости владения
+								инфраструктурой при размещении в облаке <br> и on premise).
+						.modal__info
+							.modal__years
+								span 2027
+								span 2030
+							.modal__icon
+								+icon('trends4')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Фокус на оптимизацию ИТ-затрат, <br> повышение цен на услуги
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Рост объема облачных ресурсов и снижение уровня отслеживаемости затрат <br> на инфраструктуру
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Расширение инфраструктуры – <br> закупка новых ресурсов или <br> облачное масштабирование
+						.modal__col
+							.modal__tags
+								.modal__tag #Промышленность
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ИТ
+								.modal__tag #ритейл
+								.modal__tag #Финансы
+	#trend5.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Intelligent Observability
+							.modal__text.
+								Мониторинг, логирование и сбор трейсов сервиса с целью анализа затрат, производительности,
+								надежности инфраструктуры и угроз ИБ.
+						.modal__info
+							.modal__years
+								span 2028
+								span 2030
+							.modal__icon
+								+icon('trends5')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Фокус на снижение затрат <br> на инфраструктуру
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Усложнение ИТ-инфраструктуры, <br> использование гибридных <br> и мультиоблачных сред
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Усложнение ИТ-систем, развитие <br> бессерверных вычислений и cloud-native архитектур
+						.modal__col
+							.modal__tags
+								.modal__tag #Промышленность
+								.modal__tag #ИТ
+								.modal__tag #ритейл
+								.modal__tag #Финансы
+	#trend6.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Опережающий рост <br> частных облаков
+							.modal__text.
+								Тренд российского рынка, вызванный геополитической ситуацией и сложностями обслуживания инфраструктуры.
+						.modal__info
+							.modal__years
+								span 2023
+								span 2029
+							.modal__icon
+								+icon('trends6')
+					.modal__bottom.modal__bottom--triple
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Усложнение <br> ИТ-инфраструктуры, мультивендорность
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Локализация бизнеса международных компаний в России
+								.modal-grid-item(style='grid-column: 1 / span 2;')
+									.modal-grid-item__number 03
+									.modal-grid-item__text Дефицит кадров и высокий ФОТ специалистов <br> по обслуживанию инфраструктуры
+						.modal__col
+							table.modal__table
+								tr
+									th
+									th CAGR* <br> 2021-2023
+									th CAGR <br> 2023-2025
+								tr
+									td Публичное <br> облако
+									td 48,6%
+									td 30,0%
+								tr
+									td HaaS
+									td 27,0%
+									td 21,8%
+								tr
+									td Частное <br> облако
+									td 24,7%
+									td
+										.table-cell-row
+											span 30,2%
+											+icon('arrow-up')(width='25', height='20')
+							.modal__table-note *CAGR (Compound annual growth rate) – <br> совокупный среднегодовой темп роста
+						.modal__col
+							.modal__tags
+								.modal__tag #финансы
+								.modal__tag #наука
+								.modal__tag #здравоохранение
+								.modal__tag #связь
+								.modal__tag #энергетика
+								.modal__tag #нефтегаз
+								.modal__tag #ГМК
+								.modal__tag #химия и нефтехимия
 	#trend7.hystmodal(aria-hidden='true')
 		.hystmodal__wrap
 			.hystmodal__window(role='dialog', aria-modal='true')
-				//button.hystmodal__close(data-hystclose) Закрыть
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
 				.modal
 					.modal__top
 						.modal__content
@@ -366,3 +606,286 @@ block modals
 								.modal__tag #Транспорт
 								.modal__tag #ГМК
 								.modal__tag #Финансы
+	#trend8.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title DevSecOps в облаке
+							.modal__text.
+								Методология непрерывной безопасной разработки с применением практик ИБ на всех этапах жизненного
+								цикла ПО – механизмов автоматизированного мониторинга, тестирования и контроля.
+						.modal__info
+							.modal__years
+								span 2026
+								span 2030
+							.modal__icon
+								+icon('trends8')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Фокус на вопросы безопасности, рост киберугроз
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Выстроенные конвейеры DevOps
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Нестабильный доступ к GitHub и опасения относительно вредоносного кода в opensource
+								.modal-grid-item
+									.modal-grid-item__number 04
+									.modal-grid-item__text Необходимость повышения эффективности <br> и скорости работы команд разработки <br> при растущем объеме задач
+						.modal__col
+							.modal__tags
+								.modal__tag #Химия и нефтехимия
+								.modal__tag #Строительство
+								.modal__tag #Транспорт
+								.modal__tag #ГМК
+								.modal__tag #Нефтегаз
+								.modal__tag #энергетика
+	#trend9.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Киберхранилище
+							.modal__text.
+								Хранилище с интегрированными функциями ИБ: защищает данные от атак программ-вымогателей путем раннего
+								обнаружения и блокировки угроз, анализирует атаки и автоматически запускает процесс восстановления.
+						.modal__info
+							.modal__years
+								span 2030
+							.modal__icon
+								+icon('trends9')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Частые атаки программ-вымогателей <br> на хранилища и резервные копии
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Сложности восстановления <br> данных хранилища после атак
+						.modal__col
+							.modal__tags
+								.modal__tag #Промышленность
+								.modal__tag #Здравоохранение
+								.modal__tag #ритейл
+								.modal__tag #Телеком
+								.modal__tag #Транспорт
+	#trend10.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Storage as a Service, гибридное и универсальное хранилища
+							.modal__text.
+								Storage as a Service (STaaS) – хранилище в публичном облаке, <br> за администрирование и развитие
+								которого отвечает провайдер. <br> Гибридное хранилище объединяет облачное и локальное хранилища.
+						.modal__info
+							.modal__years
+								span 2028
+								span 2030
+							.modal__icon
+								+icon('trends10')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns3
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Увеличение объемов <br> хранения данных
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Рост объема неструктурированных <br> данных
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Импортозамещение инфраструктуры
+								.modal-grid-item
+									.modal-grid-item__number 04
+									.modal-grid-item__text Ускорение навигации <br> в данных хранилища без резкого роста стоимости
+								.modal-grid-item
+									.modal-grid-item__number 05
+									.modal-grid-item__text Сложность приобретения <br> и поддержки зарубежных хранилищ
+						.modal__col
+							.modal__tags
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ритейл
+								.modal__tag #Финансы
+	#trend11.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Контейнеризация
+							.modal__text.
+								Метод виртуализации, при котором ядро ОС поддерживает несколько изолированных друг от друга приложений,
+								размещенных в особых <br> средах разработки и исполнения – контейнерах.
+						.modal__info
+							.modal__years
+								span 2024
+								span 2030
+							.modal__icon
+								+icon('trends11')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Упрощение и ускорение разработки, <br> унификация ИТ-инфраструктуры
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Комьюнити-маркетинг и развитие <br> компетенций разработчиков <br> в управлении приложениями <br> и контейнерами
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Микросервисные архитектуры – <br> новый стандарт разработки
+						.modal__col
+							.modal__tags
+								.modal__tag #Химия и нефтехимия
+								.modal__tag #Промышленность
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ИТ
+								.modal__tag #Строительство
+								.modal__tag #ритейл
+								.modal__tag #Нефтегаз
+								.modal__tag #Транспорт
+								.modal__tag #ГМК
+								.modal__tag #Финансы
+	#trend12.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title ИИ-ассистенты разработчика
+							.modal__text.
+								Помощники в написании кода и в управлении разработкой <br> и инфраструктурой на естественном языке.
+						.modal__info
+							.modal__years
+								span 2026
+								span 2030
+							.modal__icon
+								+icon('trends12')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Дефицит и высокая стоимость <br> ресурса разработчиков
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Недостаток кадров с широкими <br> компетенциями в технологиях <br> разработки и эксплуатации
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Большой объем рутинной работы <br> в процессе разработки
+						.modal__col
+							.modal__tags
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ритейл
+								.modal__tag #ИТ
+								.modal__tag #Финансы
+	#trend13.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title GPU as a Service
+							.modal__text.
+								GPU в облаке позволяет решать требовательные к ресурсам задачи <br> (например, обучение ИИ или рендеринг
+								визуального контента) <br> без капитальных затрат на закупку карт.
+						.modal__info
+							.modal__years
+								span 2024
+								span 2030
+							.modal__icon
+								+icon('trends13')
+					.modal__bottom.modal__bottom--triple
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Быстрый доступ <br> к GPU в облаке
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Непостоянные <br> нагрузки на GPU
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Желание протестировать <br> разные GPU
+								.modal-grid-item
+									.modal-grid-item__number 04
+									.modal-grid-item__text Сложность <br> и длительность поставок карт, высокая стоимость
+						.modal__col.modal__col--flex-column
+							.modal__procent 79%
+							.modal__description <span>6,6 млрд руб.</span> рост рынка GPUaaS в 2023
+							.modal__note *Ведомости, 2023
+						.modal__col
+							.modal__tags
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ритейл
+								.modal__tag #ИТ
+								.modal__tag #Финансы
+	#trend14.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				button.hystmodal__close(data-hystclose)
+					+icon('close')(width='30', height='30')
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Платформы MLOps
+							.modal__text.
+								Мощная аппаратная инфраструктура и платформенные сервисы <br> для ML-инженеров и data science,
+								реализованные на базе <br> CPU или CPU+GPU.
+						.modal__info
+							.modal__years
+								span 2027
+								span 2030
+							.modal__icon
+								+icon('trends14')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Развитие искусственного интеллекта
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Использование MLOps-методологий разработчиками
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Внедрение практик MLOps: надежное <br> и эффективное развертывание и сопровождение моделей машинного обучения
+								.modal-grid-item
+									.modal-grid-item__number 04
+									.modal-grid-item__text Активное продвижение ML-платформ <br> облачными провайдерами через <br> комьюнити-маркетинг
+						.modal__col
+							.modal__tags
+								.modal__tag #Химия и нефтехимия
+								.modal__tag #Строительство
+								.modal__tag #Транспорт
+								.modal__tag #ГМК
+								.modal__tag #Нефтегаз
+								.modal__tag #энергетика

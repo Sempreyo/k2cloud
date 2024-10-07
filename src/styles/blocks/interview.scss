@@ -1,6 +1,4 @@
 .interview {
-	padding-top: 171px;
-
 	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;
@@ -10,5 +8,9 @@
 
 	&__card {
 		width: calc(50% - 4px);
+
+		@include max(ti) {
+			width: 100%;
+		}
 	}
 }

@@ -1,6 +1,10 @@
 .feedback {
 	padding-top: 76px;
 
+	@include max(ti) {
+		padding-top: 40px;
+	}
+
 	&__title {
 		max-width: 725px;
 	}
@@ -11,10 +15,18 @@
 		gap: 20px;
 		max-width: 932px;
 		margin-top: 45px;
+
+		@include max(ti) {
+			margin-top: 20px;
+		}
 	}
 
 	&__field {
 		width: calc(50% - 10px);
+
+		@include max(ti) {
+			width: 100%;
+		}
 	}
 
 	&__submit {
@@ -22,5 +34,9 @@
 		padding: 15px 20px;
 		border-radius: 20px;
 		margin-top: 34px;
+
+		@include max(ti) {
+			margin-top: 20px;
+		}
 	}
 }

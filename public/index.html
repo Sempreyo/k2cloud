@@ -18,12 +18,22 @@
             <svg>
               <use xlink:href="./images/sprite.svg#logo-cn"></use>
             </svg></a></div>
-        <ul class="header__menu">
-          <li><a href="#"><span>статьи</span></a></li>
-          <li><a href="#"><span>тренды</span></a></li>
-          <li><a href="#"><span>интервью</span></a></li>
-          <li><a href="#"><span>решения</span></a></li>
-        </ul>
+        <div class="header__burger">
+          <div class="header__burger-line"></div>
+        </div>
+        <div class="header__menu-wrapper">
+          <div class="header__menu-close">
+            <svg width="30" height="30">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </div>
+          <ul class="header__menu">
+            <li><a class="anchor" href="#articles"><span>статьи</span></a></li>
+            <li><a class="anchor" href="#trends"><span>тренды</span></a></li>
+            <li><a class="anchor" href="#interview"><span>интервью</span></a></li>
+            <li><a class="anchor" href="#solutions"><span>решения</span></a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -32,8 +42,8 @@
           <div class="hero__col">
             <h1 class="hero__title">K2 <span>Cloud</span></h1>
             <div class="hero__bottom">
-              <div class="hero__subtitle">Будущее бизнеса — <br> в облаках</div>
-              <div class="hero__text">Бизнес-ориентированное облако и команда экспертов с опытом интеграционных проектов</div>
+              <div class="hero__subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">Будущее бизнеса — <br> в облаках</div>
+              <div class="hero__text" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">Бизнес-ориентированное облако и команда экспертов с опытом интеграционных проектов</div>
             </div>
           </div>
           <div class="hero__col">
@@ -50,11 +60,11 @@
           </div>
         </div>
       </section>
-      <section class="articles">
+      <section class="articles" id="articles">
         <div class="container">
-          <h2 class="title">Статьи</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-once="true">Статьи</h2>
           <div class="articles__wrapper">
-            <div class="articles__card articles-card"><a class="articles-card__link" href="#" target="_blank"></a>
+            <div class="articles__card articles-card" data-aos="fade-left" data-aos-once="true"><a class="articles-card__link" href="#" target="_blank"></a>
               <div class="articles-card__filler">
                 <picture>
                   <source srcset="./images/articles/filler.webp 1x, ./images/articles/filler@2x.webp 2x" type="image/webp">
@@ -83,7 +93,7 @@
                 </svg>
               </div>
             </div>
-            <div class="articles__card articles-card articles-card--2"><a class="articles-card__link" href="#" target="_blank"></a>
+            <div class="articles__card articles-card articles-card--2" data-aos="fade-right" data-aos-once="true"><a class="articles-card__link" href="#" target="_blank"></a>
               <div class="articles-card__filler">
                 <picture>
                   <source srcset="./images/articles/filler.webp 1x, ./images/articles/filler@2x.webp 2x" type="image/webp">
@@ -115,7 +125,7 @@
           </div>
         </div>
       </section>
-      <section class="trends">
+      <section class="trends" id="trends">
         <div class="container">
           <div class="trends__bg">
             <picture>
@@ -125,8 +135,8 @@
           </div>
           <div class="trends__top">
             <div class="trends__col">
-              <h2 class="title trends__title">Тренды развития ИТ</h2>
-              <div class="trends__text">На основе аналитических данных <br> по мировому и российскому ИТ-рынкам</div><a class="button trends__button" href="#"><span>Получить полный материал</span></a>
+              <h2 class="title trends__title" data-aos="fade-up" data-aos-once="true">Тренды развития ИТ</h2>
+              <div class="trends__text" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">На основе аналитических данных <br> по мировому и российскому ИТ-рынкам</div><a class="button trends__button" href="#"><span>Получить полный материал</span></a>
             </div>
             <div class="trends__col">
               <div class="trends__year-1">
@@ -216,11 +226,11 @@
           </div>
         </div>
       </section>
-      <section class="interview">
+      <section class="interview" id="interview">
         <div class="container">
-          <h2 class="title title--big">Интервью с экспертами</h2>
+          <h2 class="title title--big" data-aos="fade-up" data-aos-once="true">Интервью с экспертами</h2>
           <div class="interview__wrapper">
-            <div class="interview__card interview-card"><a class="interview-card__link" href="#" target="_blank"></a>
+            <div class="interview__card interview-card" data-aos="fade-left" data-aos-once="true"><a class="interview-card__link" href="#" target="_blank"></a>
               <div class="interview-card__image">
                 <picture>
                   <source srcset="./images/interview/1.webp 1x, ./images/interview/1@2x.webp 2x" type="image/webp">
@@ -245,7 +255,7 @@
                 <div class="interview-card__read">Читать интервью</div>
               </div>
             </div>
-            <div class="interview__card interview-card"><a class="interview-card__link" href="#" target="_blank"></a>
+            <div class="interview__card interview-card" data-aos="fade-right" data-aos-once="true"><a class="interview-card__link" href="#" target="_blank"></a>
               <div class="interview-card__image">
                 <picture>
                   <source srcset="./images/interview/2.webp 1x, ./images/interview/2@2x.webp 2x" type="image/webp">
@@ -273,9 +283,9 @@
           </div>
         </div>
       </section>
-      <section class="solutions">
+      <section class="solutions" id="solutions">
         <div class="container">
-          <h2 class="title title--big">Наш портфель решений</h2>
+          <h2 class="title title--big" data-aos="fade-up" data-aos-once="true">Наш портфель решений</h2>
           <div class="solutions__slider-outer">
             <div class="solutions__slider swiper">
               <div class="swiper-wrapper">
@@ -291,7 +301,7 @@
                       <div class="solutions-card__content">
                         <div class="solutions-card__title">К2 Облако</div>
                         <div class="solutions-card__text">Надежная и производительная среда собственной разработки для быстрого развертывания корпоративных приложений и сервисов с тремя зонами доступности на базе сети дата-центров</div>
-                      </div><a class="solutions-card__link" href="#" target="_blank">
+                      </div><a class="solutions-card__link d-none-mobile-tablet" href="#" target="_blank">
                         <svg width="20" height="25">
                           <use xlink:href="./images/sprite.svg#arrow-right"></use>
                         </svg><span>Подробнее</span></a>
@@ -310,7 +320,10 @@
                         <div class="solutions-row__item"><span class="solutions-row__string--small">SLA</span> <br> <span class="solutions-row__string">99,95%</span></div>
                       </div>
                     </div>
-                  </div>
+                  </div><a class="solutions-card__link d-none-tablet" href="#" target="_blank">
+                    <svg width="20" height="25">
+                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                    </svg><span>Подробнее</span></a>
                 </div>
                 <div class="solutions-card swiper-slide">
                   <div class="solutions-card__bg">
@@ -324,7 +337,7 @@
                       <div class="solutions-card__content">
                         <div class="solutions-card__title">Локализация</div>
                         <div class="solutions-card__text">Бесперебойная миграция бизнеса с международных платформ в ИТ-контур <br> на базе К2 Облака</div>
-                      </div><a class="solutions-card__link" href="#" target="_blank">
+                      </div><a class="solutions-card__link d-none-mobile-tablet" href="#" target="_blank">
                         <svg width="20" height="25">
                           <use xlink:href="./images/sprite.svg#arrow-right"></use>
                         </svg><span>Подробнее</span></a>
@@ -343,7 +356,10 @@
                         <div class="solutions-row__item">Комплексная услуга из одного окна – инфраструктура и core-сервисы, кибербезопасность и бизнес-приложения.</div>
                       </div>
                     </div>
-                  </div>
+                  </div><a class="solutions-card__link d-none-tablet" href="#" target="_blank">
+                    <svg width="20" height="25">
+                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                    </svg><span>Подробнее</span></a>
                 </div>
                 <div class="solutions-card swiper-slide">
                   <div class="solutions-card__bg">
@@ -363,7 +379,7 @@
                             <source srcset="./images/solutions/logo.webp 1x, ./images/solutions/logo@2x.webp 2x" type="image/webp"><img src="./images/solutions/logo.png" srcset="./images/solutions/logo.png 1x, ./images/solutions/logo@2x.png 2x">
                           </picture>
                         </div>
-                      </div><a class="solutions-card__link" href="#" target="_blank">
+                      </div><a class="solutions-card__link d-none-mobile-tablet" href="#" target="_blank">
                         <svg width="20" height="25">
                           <use xlink:href="./images/sprite.svg#arrow-right"></use>
                         </svg><span>Подробнее</span></a>
@@ -382,7 +398,10 @@
                         <div class="solutions-row__item">Готовый сервис без капитальных затрат: не нужно покупать оборудование, лицензии и вендорскую поддержку</div>
                       </div>
                     </div>
-                  </div>
+                  </div><a class="solutions-card__link d-none-tablet" href="#" target="_blank">
+                    <svg width="20" height="25">
+                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                    </svg><span>Подробнее</span></a>
                 </div>
                 <div class="solutions-card swiper-slide">
                   <div class="solutions-card__bg">
@@ -396,7 +415,7 @@
                       <div class="solutions-card__content">
                         <div class="solutions-card__title">1С в Облаке</div>
                         <div class="solutions-card__text">Решение под ключ: аудит, размещение систем от 100 пользователей, предоставление лицензий, техподдержка</div>
-                      </div><a class="solutions-card__link" href="#" target="_blank">
+                      </div><a class="solutions-card__link d-none-mobile-tablet" href="#" target="_blank">
                         <svg width="20" height="25">
                           <use xlink:href="./images/sprite.svg#arrow-right"></use>
                         </svg><span>Подробнее</span></a>
@@ -412,7 +431,10 @@
                         <div class="solutions-row__item">Быстрый старт удаленной работы <br> с различными версиями баз 1С</div>
                       </div>
                     </div>
-                  </div>
+                  </div><a class="solutions-card__link d-none-tablet" href="#" target="_blank">
+                    <svg width="20" height="25">
+                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                    </svg><span>Подробнее</span></a>
                 </div>
                 <div class="solutions-card swiper-slide">
                   <div class="solutions-card__bg">
@@ -426,7 +448,7 @@
                       <div class="solutions-card__content">
                         <div class="solutions-card__title">Администрирование ИТ-инфраструктуры</div>
                         <div class="solutions-card__text">Круглосуточное сопровождение вашей ИТ-инфраструктуры, решение задач <br> по ее изменению и развитию</div>
-                      </div><a class="solutions-card__link" href="#" target="_blank">
+                      </div><a class="solutions-card__link d-none-mobile-tablet" href="#" target="_blank">
                         <svg width="20" height="25">
                           <use xlink:href="./images/sprite.svg#arrow-right"></use>
                         </svg><span>Подробнее</span></a>
@@ -443,7 +465,10 @@
                         <div class="solutions-row__item">Сопровождение инфраструктуры на всех уровнях: оборудование, ВМ, ОС, базы данных, СРК</div>
                       </div>
                     </div>
-                  </div>
+                  </div><a class="solutions-card__link d-none-tablet" href="#" target="_blank">
+                    <svg width="20" height="25">
+                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                    </svg><span>Подробнее</span></a>
                 </div>
               </div>
             </div>
@@ -465,7 +490,7 @@
       </section>
       <section class="feedback">
         <div class="container">
-          <h2 class="title title--big feedback__title">Заполните форму и получите полную версию материала: <br> <span>отраслевые ИТ-тренды 2024</span></h2>
+          <h2 class="title title--big feedback__title" data-aos="fade-up" data-aos-once="true">Заполните форму и получите полную версию материала: <br> <span>отраслевые ИТ-тренды 2024</span></h2>
           <form class="feedback__form">
             <div class="feedback__field field">
               <input type="text" name="fullName" placeholder="Имя и Фамилия">
@@ -529,7 +554,11 @@
   <div class="hystmodal" id="trend1" aria-hidden="true">
     <div class="hystmodal__wrap">
       <div class="hystmodal__window" role="dialog" aria-modal="true">
-        <!--button.hystmodal__close(data-hystclose) Закрыть-->
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
         <div class="modal">
           <div class="modal__top">
             <div class="modal__content">
@@ -582,10 +611,343 @@
       </div>
     </div>
   </div>
+  <div class="hystmodal" id="trend2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Мультиоблачная/ <br> гибридная среда</div>
+              <div class="modal__text">
+                Мультиоблако объединяет облачные инфраструктуры от разных провайдеров, гибридная среда интегрирует
+                частное и публичное облака.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2027</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Рост стоимости инфраструктуры</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">В публичном облаке более широкий <br> функционал в сравнении с частным облаком</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Пересмотр подходов в риск-менеджменте <br> и необходимость «второго плеча», <br> требования ИБ</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">04</div>
+                  <div class="modal-grid-item__text">Разные модели тарификации и продуктовые линейки у разных провайдеров, возможность существенной экономии</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#Строительство</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Транспорт</div>
+                <div class="modal__tag">#Финансы</div>
+                <div class="modal__tag">#Нефтегаз</div>
+                <div class="modal__tag">#Химия и нефтехимия</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Infrastructure as Code (IaC)</div>
+              <div class="modal__text">Создание, управление и автоматизация инфраструктуры с помощью кода.</div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2025</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends3"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Поддержка инструментов IaC <br> в облаках крупнейших провайдеров</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Высокие трудозатраты и риски <br> на развертывание инфраструктуры <br> без автоматизации</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Рост популярности мультиоблачных <br> и гибридных сред, более простое <br> управление ими с помощью IaC</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#Строительство</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Транспорт</div>
+                <div class="modal__tag">#Финансы</div>
+                <div class="modal__tag">#Нефтегаз</div>
+                <div class="modal__tag">#Химия и нефтехимия</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Управление затратами <br> на инфраструктуру</div>
+              <div class="modal__text">
+                Практики FinOps (управление затратами на облачные сервисы) и ТСО (оценка совокупной стоимости владения
+                инфраструктурой при размещении в облаке <br> и on premise).
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2027</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends4"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Фокус на оптимизацию ИТ-затрат, <br> повышение цен на услуги</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Рост объема облачных ресурсов и снижение уровня отслеживаемости затрат <br> на инфраструктуру</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Расширение инфраструктуры – <br> закупка новых ресурсов или <br> облачное масштабирование</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Intelligent Observability</div>
+              <div class="modal__text">
+                Мониторинг, логирование и сбор трейсов сервиса с целью анализа затрат, производительности,
+                надежности инфраструктуры и угроз ИБ.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2028</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends5"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Фокус на снижение затрат <br> на инфраструктуру</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Усложнение ИТ-инфраструктуры, <br> использование гибридных <br> и мультиоблачных сред</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Усложнение ИТ-систем, развитие <br> бессерверных вычислений и cloud-native архитектур</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Опережающий рост <br> частных облаков</div>
+              <div class="modal__text">Тренд российского рынка, вызванный геополитической ситуацией и сложностями обслуживания инфраструктуры.</div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2023</span><span>2029</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends6"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom modal__bottom--triple">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Усложнение <br> ИТ-инфраструктуры, мультивендорность</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Локализация бизнеса международных компаний в России</div>
+                </div>
+                <div class="modal-grid-item" style="grid-column: 1 / span 2;">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Дефицит кадров и высокий ФОТ специалистов <br> по обслуживанию инфраструктуры</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <table class="modal__table">
+                <tr>
+                  <th></th>
+                  <th>CAGR* <br> 2021-2023</th>
+                  <th>CAGR <br> 2023-2025</th>
+                </tr>
+                <tr>
+                  <td>Публичное <br> облако</td>
+                  <td>48,6%</td>
+                  <td>30,0%</td>
+                </tr>
+                <tr>
+                  <td>HaaS</td>
+                  <td>27,0%</td>
+                  <td>21,8%</td>
+                </tr>
+                <tr>
+                  <td>Частное <br> облако</td>
+                  <td>24,7%</td>
+                  <td>
+                    <div class="table-cell-row"><span>30,2%</span>
+                      <svg width="25" height="20">
+                        <use xlink:href="./images/sprite.svg#arrow-up"></use>
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <div class="modal__table-note">*CAGR (Compound annual growth rate) – <br> совокупный среднегодовой темп роста</div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#финансы</div>
+                <div class="modal__tag">#наука</div>
+                <div class="modal__tag">#здравоохранение</div>
+                <div class="modal__tag">#связь</div>
+                <div class="modal__tag">#энергетика</div>
+                <div class="modal__tag">#нефтегаз</div>
+                <div class="modal__tag">#ГМК</div>
+                <div class="modal__tag">#химия и нефтехимия</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="hystmodal" id="trend7" aria-hidden="true">
     <div class="hystmodal__wrap">
       <div class="hystmodal__window" role="dialog" aria-modal="true">
-        <!--button.hystmodal__close(data-hystclose) Закрыть-->
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
         <div class="modal">
           <div class="modal__top">
             <div class="modal__content">
@@ -631,6 +993,433 @@
                 <div class="modal__tag">#Транспорт</div>
                 <div class="modal__tag">#ГМК</div>
                 <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend8" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">DevSecOps в облаке</div>
+              <div class="modal__text">
+                Методология непрерывной безопасной разработки с применением практик ИБ на всех этапах жизненного
+                цикла ПО – механизмов автоматизированного мониторинга, тестирования и контроля.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2026</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends8"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Фокус на вопросы безопасности, рост киберугроз</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Выстроенные конвейеры DevOps</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Нестабильный доступ к GitHub и опасения относительно вредоносного кода в opensource</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">04</div>
+                  <div class="modal-grid-item__text">Необходимость повышения эффективности <br> и скорости работы команд разработки <br> при растущем объеме задач</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Химия и нефтехимия</div>
+                <div class="modal__tag">#Строительство</div>
+                <div class="modal__tag">#Транспорт</div>
+                <div class="modal__tag">#ГМК</div>
+                <div class="modal__tag">#Нефтегаз</div>
+                <div class="modal__tag">#энергетика</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend9" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Киберхранилище</div>
+              <div class="modal__text">
+                Хранилище с интегрированными функциями ИБ: защищает данные от атак программ-вымогателей путем раннего
+                обнаружения и блокировки угроз, анализирует атаки и автоматически запускает процесс восстановления.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends9"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Частые атаки программ-вымогателей <br> на хранилища и резервные копии</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Сложности восстановления <br> данных хранилища после атак</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#Здравоохранение</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Телеком</div>
+                <div class="modal__tag">#Транспорт</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend10" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Storage as a Service, гибридное и универсальное хранилища</div>
+              <div class="modal__text">
+                Storage as a Service (STaaS) – хранилище в публичном облаке, <br> за администрирование и развитие
+                которого отвечает провайдер. <br> Гибридное хранилище объединяет облачное и локальное хранилища.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2028</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends10"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns3">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Увеличение объемов <br> хранения данных</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Рост объема неструктурированных <br> данных</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Импортозамещение инфраструктуры</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">04</div>
+                  <div class="modal-grid-item__text">Ускорение навигации <br> в данных хранилища без резкого роста стоимости</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">05</div>
+                  <div class="modal-grid-item__text">Сложность приобретения <br> и поддержки зарубежных хранилищ</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend11" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Контейнеризация</div>
+              <div class="modal__text">
+                Метод виртуализации, при котором ядро ОС поддерживает несколько изолированных друг от друга приложений,
+                размещенных в особых <br> средах разработки и исполнения – контейнерах.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2024</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends11"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Упрощение и ускорение разработки, <br> унификация ИТ-инфраструктуры</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Комьюнити-маркетинг и развитие <br> компетенций разработчиков <br> в управлении приложениями <br> и контейнерами</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Микросервисные архитектуры – <br> новый стандарт разработки</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Химия и нефтехимия</div>
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#Строительство</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Нефтегаз</div>
+                <div class="modal__tag">#Транспорт</div>
+                <div class="modal__tag">#ГМК</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend12" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">ИИ-ассистенты разработчика</div>
+              <div class="modal__text">Помощники в написании кода и в управлении разработкой <br> и инфраструктурой на естественном языке.</div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2026</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends12"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Дефицит и высокая стоимость <br> ресурса разработчиков</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Недостаток кадров с широкими <br> компетенциями в технологиях <br> разработки и эксплуатации</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Большой объем рутинной работы <br> в процессе разработки</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend13" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">GPU as a Service</div>
+              <div class="modal__text">
+                GPU в облаке позволяет решать требовательные к ресурсам задачи <br> (например, обучение ИИ или рендеринг
+                визуального контента) <br> без капитальных затрат на закупку карт.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2024</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends13"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom modal__bottom--triple">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Быстрый доступ <br> к GPU в облаке</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Непостоянные <br> нагрузки на GPU</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Желание протестировать <br> разные GPU</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">04</div>
+                  <div class="modal-grid-item__text">Сложность <br> и длительность поставок карт, высокая стоимость</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col modal__col--flex-column">
+              <div class="modal__procent">79%</div>
+              <div class="modal__description"><span>6,6 млрд руб.</span> рост рынка GPUaaS в 2023</div>
+              <div class="modal__note">*Ведомости, 2023</div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend14" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Платформы MLOps</div>
+              <div class="modal__text">
+                Мощная аппаратная инфраструктура и платформенные сервисы <br> для ML-инженеров и data science,
+                реализованные на базе <br> CPU или CPU+GPU.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2027</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends14"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Развитие искусственного интеллекта</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Использование MLOps-методологий разработчиками</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Внедрение практик MLOps: надежное <br> и эффективное развертывание и сопровождение моделей машинного обучения</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">04</div>
+                  <div class="modal-grid-item__text">Активное продвижение ML-платформ <br> облачными провайдерами через <br> комьюнити-маркетинг</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Химия и нефтехимия</div>
+                <div class="modal__tag">#Строительство</div>
+                <div class="modal__tag">#Транспорт</div>
+                <div class="modal__tag">#ГМК</div>
+                <div class="modal__tag">#Нефтегаз</div>
+                <div class="modal__tag">#энергетика</div>
               </div>
             </div>
           </div>

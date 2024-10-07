@@ -8,20 +8,48 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		gap: 20px;
-		padding: 20px;
+		padding: 20px 70px 20px 20px;
+
+		@include max(ti) {
+			flex-direction: column;
+			align-items: center;
+			padding: 50px 20px 20px;
+		}
+	}
+
+	&__content {
+		max-width: 615px;
 	}
 
 	&__title {
 		font-size: 42px;
 		line-height: 1;
+
+		@include max(d) {
+			font-size: fluid(36, 42, 992, 1280);
+		}
+
+		@include max(tl) {
+			font-size: fluid(28, 36, 768, 992);
+		}
+
+		@include max(ti) {
+			font-size: fluid(24, 28, 0, 768);
+			text-align: center;
+		}
 	}
 
 	&__text {
-		max-width: 592px;
 		font-family: $secondFont;
 		font-weight: 300;
 		font-size: 16px;
 		margin-top: 24px;
+
+		@include max(ti) {
+			font-size: 14px;
+			text-align: center;
+			margin-top: 15px;
+		}
 	}
 
 	&__info {
@@ -77,12 +105,25 @@
 
 	&__bottom {
 		display: flex;
+		flex-wrap: wrap;
 		margin-top: 63px;
+
+		@include max(ti) {
+			margin-top: 20px;
+		}
 
 		&--triple {
 			#{$parent}__col {
 				&:first-child {
 					width: 41.2%;
+
+					@include max(tl) {
+						width: 50%;
+					}
+
+					@include max(ti) {
+						width: 100%;
+					}
 				}
 
 				&:nth-child(2) {
@@ -90,10 +131,24 @@
 					background-color: $black;
 					color: $white;
 					padding: 10px 20px;
+
+					@include max(tl) {
+						width: 50%;
+					}
+
+					@include max(ti) {
+						width: 100%;
+						border-radius: 0;
+						border-top: 1px solid $color-main;
+					}
 				}
 
 				&:last-child {
 					width: 21.4%;
+
+					@include max(tl) {
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -108,12 +163,27 @@
 			background-color: $black;
 			color: $white;
 			padding: 26px 21px 50px;
+
+			@include max(tl) {
+				width: 100%;
+			}
 		}
 
 		&:last-child {
 			width: 21.4%;
 			background-color: $color-main;
 			padding: 23px 18px;
+
+			@include max(tl) {
+				width: 100%;
+				border-radius: 0;
+			}
+		}
+
+		&--flex-column {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 20px !important;
 		}
 	}
 
@@ -132,6 +202,14 @@
 		&--columns2 {
 			grid-template-columns: repeat(2, 1fr);
 		}
+
+		&--columns3 {
+			grid-template-columns: repeat(3, 1fr);
+
+			@include max(ti) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
 	}
 
 	&__procent {
@@ -143,6 +221,20 @@
 		font-family: $secondFont;
 		font-weight: 300;
 		font-size: 16px;
+
+		span {
+			display: block;
+			font-size: 26px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__note {
+		font-family: $secondFont;
+		color: $color-gray;
+		font-weight: 300;
+		font-size: 12px;
+		margin-top: auto;
 	}
 
 	&__tags {
@@ -161,5 +253,39 @@
 		border-radius: 8px;
 		background-color: $white;
 		padding: 3px 8px;
+	}
+
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+		font-family: $secondFont;
+		font-size: 16px;
+
+		th,
+		td {
+			padding: 8px 16px;
+		}
+
+		th {
+			font-weight: 700;
+			text-align: left;
+		}
+
+		td {
+			font-weight: 300;
+		}
+
+		.table-cell-row {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+	}
+
+	&__table-note {
+		padding: 0 16px;
+		margin-top: 10px;
+		font-size: 12px;
+		color: $color-gray;
 	}
 }

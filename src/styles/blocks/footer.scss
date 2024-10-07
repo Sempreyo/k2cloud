@@ -8,18 +8,44 @@
 	background-color: $black;
 	margin-top: 80px;
 
+	@include max(ti) {
+		margin-top: 60px;
+	}
+
 	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 20px;
+
+		@include max(ti) {
+			flex-direction: column;
+			gap: 40px;
+		}
 	}
 
 	&__col {
+		&:first-child {
+			@include max(ti) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
 		&:last-child {
 			display: flex;
 			align-items: center;
 			gap: 75px;
+
+			@include max(tl) {
+				gap: 50px;
+			}
+
+			@include max(ti) {
+				flex-direction: column;
+				gap: 40px;
+			}
 		}
 	}
 
@@ -27,6 +53,11 @@
 		display: flex;
 		align-items: center;
 		gap: 53px;
+
+		@include max(tl) {
+			flex-direction: column;
+			gap: 20px;
+		}
 	}
 
 	&__logo {
@@ -47,6 +78,17 @@
 		font-size: 18px;
 		line-height: 1;
 		margin-top: 20px;
+
+		@include max(ti) {
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		br {
+			@include max(d) {
+				display: none;
+			}
+		}
 	}
 
 	&__email {
@@ -71,6 +113,7 @@
 		font-family: $secondFont;
 		font-size: 12px;
 		line-height: 1.1;
+		white-space: nowrap;
 		transition: 0.3s ease;
 
 		&:hover {
