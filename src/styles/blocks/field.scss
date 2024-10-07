@@ -1,0 +1,65 @@
+.field {
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"] {
+		width: 100%;
+		border: 1px solid $color-main;
+		border-radius: 30px;
+		padding: 25px 24px;
+		transition: 0.3s ease;
+
+		&::placeholder {
+			font-family: $secondFont;
+			color: $black;
+			font-weight: 300;
+			font-size: 16px;
+		}
+
+		&:focus,
+		&:hover {
+			background-color: rgba($color-main, 0.2);
+		}
+	}
+
+	&--checkbox {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding-left: 25px;
+
+		b {
+			min-width: 28px;
+			max-width: 28px;
+			height: 28px;
+			border: 1px solid $color-main;
+			border-radius: 10px;
+			background-repeat: no-repeat;
+			background-size: 20px;
+			background-position: center;
+			cursor: pointer;
+			transition: 0.3s ease;
+		}
+
+		input {
+			display: none;
+
+			&:checked + b {
+				background-image: url('data:image/svg+xml,<svg fill="%2346cfff" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406.834 406.834"><polygon points="385.621,62.507 146.225,301.901 21.213,176.891 0,198.104 146.225,344.327 406.834,83.72 "/></svg>');
+			}
+		}
+
+		span {
+			font-family: $secondFont;
+			font-weight: 300;
+			font-size: 12px;
+
+			a {
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

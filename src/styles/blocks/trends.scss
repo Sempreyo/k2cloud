@@ -1,0 +1,72 @@
+.trends {
+	position: relative;
+	padding-top: 72px;
+
+	&__bg {
+		position: absolute;
+		top: 26%;
+		left: 0;
+		z-index: -1;
+	}
+
+	&__top {
+		display: flex;
+		gap: 24px;
+	}
+
+	&__col {
+		&:first-child {
+			max-width: 478px;
+		}
+
+		&:last-child {
+			position: relative;
+			right: -32px;
+		}
+	}
+
+	&__title {
+		max-width: 280px;
+		padding-top: 24px;
+	}
+
+	&__text {
+		font-family: $secondFont;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 1;
+		margin-top: 28px;
+	}
+
+	&__year-2 {
+		margin-left: 20px;
+		margin-top: -40px;
+	}
+
+	&__button {
+		margin-top: 47px;
+	}
+
+	&__bottom {
+		margin-top: 100px;
+	}
+
+	&__row {
+		display: flex;
+
+		&--1 {
+			justify-content: flex-end;
+			gap: 72px;
+		}
+
+		&--2 {
+			margin-top: -45px;
+		}
+
+		&--3 {
+			gap: 80px;
+			margin-top: 9px;
+			padding-left: 173px;
+		}
+	}
+}

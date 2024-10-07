@@ -170,84 +170,131 @@ ol {
 		pointer-events: auto;
 
 		&:hover svg {
-			color: rgba($white, 0.7);
+			color: rgba($color-main, 0.7);
 		}
 
 		svg {
+			color: $color-main;
 			transition: 0.3s ease;
-		}
-	}
-
-	&--big {
-		.swiper-btn-prev,
-		.swiper-btn-next {
-			svg {
-				width: 30px;
-				height: 58px;
-
-				@include max(d) {
-					width: 25px;
-					height: 48px;
-				}
-			}
-		}
-	}
-
-	&--outside {
-		.swiper-btn-prev {
-			left: -50px;
-
-			@include max(d) {
-				left: -34px;
-			}
-		}
-
-		.swiper-btn-next {
-			right: -50px;
-
-			@include max(d) {
-				right: -34px;
-			}
 		}
 	}
 }
 
 .swiper-pagination {
-	display: none;
-	flex-wrap: wrap;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 10px;
+	gap: 36px;
 
-	@include max(ti) {
+	&__bullet {
 		display: flex;
-	}
-
-	.swiper-pagination-bullet {
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-		background-color: $white;
+		align-items: center;
+		justify-content: center;
+		width: 94px;
+		height: 94px;
+		border-radius: 28px;
+		border: 4px solid $color-main;
 		cursor: pointer;
 		transition: 0.3s ease;
 
 		&:hover {
-			background-color: rgba($white, 0.7);
+			background-color: $color-main;
+
+			svg {
+				color: $white;
+			}
+		}
+
+		svg {
+			color: $color-main;
+			width: 75%;
+			height: 75%;
+			transition: 0.3s ease;
+		}
+
+		&--active {
+			background-color: $color-main;
+
+			svg {
+				color: $white;
+			}
 		}
 	}
 
 	.swiper-pagination-bullet-active {
-		width: 14px;
-		height: 14px;
+		width: 94px;
+		height: 94px;
+	}
+}
+
+/* Select2 */
+.select2-container {
+	width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single {
+	height: auto;
+	border: 1px solid $color-main;
+	border-radius: 30px;
+	padding: 28px 0;
+	background-color: transparent;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		background-color: rgba($color-main, 0.2);
 	}
 
-	&--black {
-		.swiper-pagination-bullet {
-			background-color: $black;
+	.select2-selection__rendered {
+		font-family: $secondFont;
+		color: $black;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 1;
+		padding: 0 40px 0 24px;
+	}
 
-			&:hover {
-				background-color: rgba($black, 0.7);
-			}
+	.select2-selection__arrow {
+		width: 44px;
+		height: 19px;
+		top: 50%;
+		right: 23px;
+		transform: translateY(-50%);
+		transition: 0.3s ease;
+
+		b {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border: 0;
+			background-image: url('data:image/svg+xml,<svg width="44" height="19" viewBox="0 0 44 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999999 0.999756L15.636 15.6358C19.1508 19.1505 24.8492 19.1505 28.364 15.6358L43 0.999754" stroke="%2346CFFF"/></svg>');
+			background-repeat: no-repeat;
+			margin: 0;
+			position: unset;
 		}
 	}
+}
+
+.select2-container--open .select2-selection--single .select2-selection__arrow {
+	transform: translateY(-50%) scale(1, -1)
+}
+
+.select2-dropdown {
+	border: 1px solid $color-main;
+}
+
+.select2-results__option {
+	background-color: rgba($color-main, 0.2);
+	padding: 15px 24px;
+	font-family: $secondFont;
+	color: $black;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1;
+	transition: 0.3s ease;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+.select2-container--default .select2-results__option--selected {
+	background-color: $color-main;
+	color: $white;
 }

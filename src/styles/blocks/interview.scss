@@ -1,0 +1,14 @@
+.interview {
+	padding-top: 171px;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-top: 34px;
+	}
+
+	&__card {
+		width: calc(50% - 4px);
+	}
+}

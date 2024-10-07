@@ -7,13 +7,362 @@ block vars
 		};
 
 block main
-	//section.hero
-		.hero__bg
-			+picture('hero', 'jpg')
-			a.hero__logo(href='#', target='_blank')
-				+icon('logo')(width='108', height='50')
+	section.hero
+		.container.hero__container
+			.hero__col
+				h1.hero__title K2 <span>Cloud</span>
+				.hero__bottom
+					.hero__subtitle Будущее бизнеса — <br> в облаках
+					.hero__text Бизнес-ориентированное облако и команда экспертов с опытом интеграционных проектов
+			.hero__col
+				.hero__bg
+					+picture('bg-grid', 'png')
+					+picture('astronaut', 'png')(class='hero__bg-astronaut')
 	section.articles
+		.container
+			+title('Статьи')
+			.articles__wrapper
+				.articles__card.articles-card
+					a.articles-card__link(href='#', target='_blank')
+					.articles-card__filler
+						+picture('articles/filler', 'png')
+					.articles-card__content
+						.articles-card__title Облачные тренды-2030
+						.articles-card__text как будет меняться ИТ-климат
+					.articles-card__image
+						+picture('articles/object1', 'png')
+					.articles-card__image-blur
+						+picture('articles/object1blur', 'png')
+					.articles-card__read
+						span читать
+						+icon('arrow-right')(width='14', height='18')
+				.articles__card.articles-card.articles-card--2
+					a.articles-card__link(href='#', target='_blank')
+					.articles-card__filler
+						+picture('articles/filler', 'png')
+					.articles-card__content
+						.articles-card__title Всепроникающая безопасность
+						.articles-card__text какие облачные <br> ИБ-решения будут наиболее востребованы и почему
+					.articles-card__image
+						+picture('articles/object2', 'png')
+					.articles-card__image-blur
+						+picture('articles/object2blur', 'png')
+					.articles-card__read
+						span читать
+						+icon('arrow-right')(width='14', height='18')
 	section.trends
+		.container
+			.trends__bg
+				+picture('trends/bg-trends', 'png')
+			.trends__top
+				.trends__col
+					+title('Тренды развития ИТ', 'trends__title')
+					.trends__text На основе аналитических данных <br> по мировому и российскому ИТ-рынкам
+					+button('Получить полный материал', 'trends__button', '#')
+				.trends__col
+					.trends__year-1
+						+picture('trends/2024', 'png')
+					.trends__year-2
+						+picture('trends/2030', 'png')
+			.trends__bottom
+				.trends__row.trends__row--1
+					.trends-cell
+						.trends-cell__title Облака и ИТ-инфраструктура
+						.trends-cell__grid.trends-cell__grid--1
+							a.trends-cell__item(href='#', data-hystmodal='#trend1')
+								+icon('trends1')(width='70', height='70')
+							a.trends-cell__item(href='#', data-hystmodal='#trend2')
+								+icon('trends2')(width='103', height='72')
+							a.trends-cell__item(href='#', data-hystmodal='#trend3')
+								+icon('trends3')(width='84', height='53')
+							a.trends-cell__item(href='#', data-hystmodal='#trend4')
+								+icon('trends4')(width='86', height='86')
+							a.trends-cell__item(href='#', data-hystmodal='#trend5')
+								+icon('trends5')(width='94', height='94')
+							a.trends-cell__item(href='#', data-hystmodal='#trend6')
+								+icon('trends6')(width='69', height='70')
+					.trends-cell
+						.trends-cell__title Всепроникающая кибербезопасность
+						.trends-cell__grid.trends-cell__grid--2
+							a.trends-cell__item(href='#', data-hystmodal='#trend7')
+								+icon('trends7')(width='72', height='93')
+							a.trends-cell__item(href='#', data-hystmodal='#trend8')
+								+icon('trends8')(width='70', height='92')
+							a.trends-cell__item(href='#', data-hystmodal='#trend9')
+								+icon('trends9')(width='79', height='78')
+				.trends__row.trends__row--2
+					.trends-cell
+						.trends-cell__title Хранение данных
+						.trends-cell__grid.trends-cell__grid--3
+							a.trends-cell__item(href='#', data-hystmodal='#trend10')
+								+icon('trends10')(width='74', height='71')
+				.trends__row.trends__row--3
+					.trends-cell
+						.trends-cell__title Разработка цифровых сервисов
+						.trends-cell__grid.trends-cell__grid--4
+							a.trends-cell__item(href='#', data-hystmodal='#trend11')
+								+icon('trends11')(width='80', height='91')
+							a.trends-cell__item(href='#', data-hystmodal='#trend12')
+								+icon('trends12')(width='82', height='72')
+					.trends-cell
+						.trends-cell__title Инфраструктура для ИИ
+						.trends-cell__grid.trends-cell__grid--5
+							a.trends-cell__item(href='#', data-hystmodal='#trend13')
+								svg.trends-cell__icon-gpu(width='84' height='85' viewbox='0 0 84 85' fill='none' xmlns='http://www.w3.org/2000/svg')
+									rect(x='0.749481' y='0.955811' width='83.1516' height='83.1516' rx='15.7137' fill='currentColor')
+									path(d='M29.1392 37.9204H20.439C18.8257 37.9204 17.7022 38.2757 17.0684 38.9863C16.4346 39.6777 16.1178 41.0125 16.1178 42.9907C16.1178 44.9688 16.4346 46.3132 17.0684 47.0238C17.7022 47.7152 18.8257 48.0609 20.439 48.0609H21.8218C22.6669 48.0609 23.0894 47.6384 23.0894 46.7934V42.4145H29.6001V49.9047C29.6001 50.9034 29.3216 51.6812 28.7647 52.2382C28.2077 52.7951 27.4299 53.0736 26.4312 53.0736H18.2496C15.0038 53.0736 12.7184 52.2862 11.3932 50.7113C10.0872 49.1173 9.4342 46.5437 9.4342 42.9907C9.4342 39.4376 10.0872 36.8737 11.3932 35.2988C12.7184 33.7047 15.0038 32.9077 18.2496 32.9077H29.1392V37.9204ZM38.4087 53.0736H31.898V36.0766C31.898 35.0779 32.1765 34.3001 32.7335 33.7432C33.2904 33.1862 34.0683 32.9077 35.0669 32.9077H46.5039C48.6933 32.9077 50.201 33.4839 51.0268 34.6362C51.8527 35.7886 52.2656 37.5939 52.2656 40.0522C52.2656 42.5105 51.8527 44.3255 51.0268 45.497C50.201 46.6685 48.6933 47.2543 46.5039 47.2543H38.4087V53.0736ZM38.4087 42.2416H42.9893C43.8919 42.2416 44.5449 42.088 44.9482 41.7807C45.3708 41.4542 45.582 40.878 45.582 40.0522C45.582 39.2264 45.3804 38.6694 44.977 38.3813C44.5737 38.074 43.9111 37.9204 42.9893 37.9204H39.6763C38.8312 37.9204 38.4087 38.3429 38.4087 39.1879V42.2416ZM61.9195 47.2255C62.4957 47.7825 63.3792 48.0609 64.5699 48.0609C65.7607 48.0609 66.6345 47.7825 67.1915 47.2255C67.7677 46.6685 68.0557 45.7563 68.0557 44.4887V32.9077H74.5664V45.0073C74.5664 48.0417 73.731 50.1832 72.0601 51.4315C70.4084 52.6799 67.9117 53.3041 64.5699 53.3041C61.2281 53.3041 58.7218 52.6799 57.0509 51.4315C55.3992 50.1832 54.5734 48.0417 54.5734 45.0073V32.9077H61.0841V44.4887C61.0841 45.7563 61.3626 46.6685 61.9195 47.2255Z')
+							a.trends-cell__item(href='#', data-hystmodal='#trend14')
+								+icon('trends14')(width='69', height='84')
 	section.interview
+		.container
+			+title('Интервью с экспертами', 'title--big')
+			.interview__wrapper
+				.interview__card.interview-card
+					a.interview-card__link(href='#', target='_blank')
+					.interview-card__image
+						+picture('interview/1', 'png')
+					.interview-card__filler
+						.interview-card__filler-angle
+						.interview-card__filler-blocks
+					.interview-card__content
+						.interview-card__type BUSINESS VIEW
+						.interview-card__middle
+							.interview-card__quote
+								+icon('quotes')(width='27', height='15')
+								span Пользователи стали доверять облакам. <br> Что изменилось?
+							.interview-card__name Сергей Зинкевич
+							.interview-card__position Директор K2 Cloud
+						.interview-card__read Читать интервью
+				.interview__card.interview-card
+					a.interview-card__link(href='#', target='_blank')
+					.interview-card__image
+						+picture('interview/2', 'png')
+					.interview-card__filler
+						.interview-card__filler-angle
+						.interview-card__filler-blocks
+					.interview-card__content
+						.interview-card__type TECH VIEW
+						.interview-card__middle
+							.interview-card__quote
+								+icon('quotes')(width='27', height='15')
+								span Базовые облачные сервисы востребованы <br> у клиентов, но многие провайдеры о них забыли
+							.interview-card__name Кирилл Бойко
+							.interview-card__position Технический директор K2 Cloud
+						.interview-card__read Читать интервью
 	section.solutions
+		.container
+			+title('Наш портфель решений', 'title--big')
+			.solutions__slider-outer
+				.solutions__slider.swiper
+					.swiper-wrapper
+						.solutions-card.swiper-slide
+							.solutions-card__bg
+								+picture('solutions/1', 'png')
+							.solutions-card__wrapper
+								.solutions-card__col
+									.solutions-card__content
+										.solutions-card__title К2 Облако
+										.solutions-card__text Надежная и производительная среда собственной разработки для быстрого развертывания корпоративных приложений и сервисов с тремя зонами доступности на базе сети дата-центров
+									a.solutions-card__link(href='#', target='_blank')
+										+icon('arrow-right')(width='20', height='25')
+										span Подробнее
+								.solutions-card__col
+									.solutions-row
+										.solutions-row__item Высокоскоростное подключение
+										.solutions-row__item до <span class="solutions-row__string">10</span> Гбит/с
+									.solutions-row
+										.solutions-row__item Выделенная техническая команда на каждый проект
+										.solutions-row__item <span class="solutions-row__string">400+</span> <br> <span class="solutions-row__string--small">экспертов</span>
+									.solutions-row
+										.solutions-row__item Время реакции <br> 10 мин
+										.solutions-row__item <span class="solutions-row__string--small">SLA</span> <br> <span class="solutions-row__string">99,95%</span>
+						.solutions-card.swiper-slide
+							.solutions-card__bg
+								+picture('solutions/2', 'png')
+							.solutions-card__wrapper
+								.solutions-card__col
+									.solutions-card__content
+										.solutions-card__title Локализация
+										.solutions-card__text Бесперебойная миграция бизнеса с международных платформ в ИТ-контур <br> на базе К2 Облака
+									a.solutions-card__link(href='#', target='_blank')
+										+icon('arrow-right')(width='20', height='25')
+										span Подробнее
+								.solutions-card__col
+									.solutions-row.solutions-row--list
+										.solutions-row__item
+										.solutions-row__item Запуск автономной работы ИТ <br> без расширения ИТ-команды
+									.solutions-row.solutions-row--list
+										.solutions-row__item
+										.solutions-row__item Непрерывность критичных <br> бизнес-процессов при отделении от головной компании
+									.solutions-row.solutions-row--list
+										.solutions-row__item
+										.solutions-row__item Комплексная услуга из одного окна – инфраструктура и core-сервисы, кибербезопасность и бизнес-приложения.
+						.solutions-card.swiper-slide
+							.solutions-card__bg
+								+picture('solutions/3', 'png')
+							.solutions-card__wrapper
+								.solutions-card__col
+									.solutions-card__content
+										.solutions-card__title Корпоративное хранилище данных
+										.solutions-card__text Сервис хранения и аналитики данных: вычислительные ресурсы К2 Облака, лицензии Arenadata, поддержка 24/7 с ежемесячной оплатой
+										.solutions-card__logo
+											+picture('solutions/logo', 'png')
+									a.solutions-card__link(href='#', target='_blank')
+										+icon('arrow-right')(width='20', height='25')
+										span Подробнее
+								.solutions-card__col
+									.solutions-row.solutions-row--list
+										.solutions-row__item
+										.solutions-row__item Распределенное хранение больших объемов информации — до десятков петабайт
+									.solutions-row.solutions-row--list
+										.solutions-row__item
+										.solutions-row__item Высокая производительность и практически неограниченная масштабируемость
+									.solutions-row.solutions-row--list
+										.solutions-row__item
+										.solutions-row__item Готовый сервис без капитальных затрат: не нужно покупать оборудование, лицензии и вендорскую поддержку
+						.solutions-card.swiper-slide
+							.solutions-card__bg
+								+picture('solutions/4', 'png')
+							.solutions-card__wrapper
+								.solutions-card__col
+									.solutions-card__content
+										.solutions-card__title 1С в Облаке
+										.solutions-card__text Решение под ключ: аудит, размещение систем от 100 пользователей, предоставление лицензий, техподдержка
+									a.solutions-card__link(href='#', target='_blank')
+										+icon('arrow-right')(width='20', height='25')
+										span Подробнее
+								.solutions-card__col
+									.solutions-row.solutions-row--single
+										.solutions-row__item Повышение производительности и улучшение качества работы систем 1С по сравнению <br> с локальной инфраструктурой
+									.solutions-row.solutions-row--single
+										.solutions-row__item Импортозамещение ERP: <br> от подбора конфигурации и проектирования <br> до внедрения и настройки
+									.solutions-row.solutions-row--single
+										.solutions-row__item Быстрый старт удаленной работы <br> с различными версиями баз 1С
+						.solutions-card.swiper-slide
+							.solutions-card__bg
+								+picture('solutions/5', 'png')
+							.solutions-card__wrapper
+								.solutions-card__col
+									.solutions-card__content
+										.solutions-card__title Администрирование ИТ-инфраструктуры
+										.solutions-card__text Круглосуточное сопровождение вашей ИТ-инфраструктуры, решение задач <br> по ее изменению и развитию
+									a.solutions-card__link(href='#', target='_blank')
+										+icon('arrow-right')(width='20', height='25')
+										span Подробнее
+								.solutions-card__col
+									.solutions-row.solutions-row--single
+										.solutions-row__item Мониторинг и поддержка 24х7, время реакции 10 минут, детализированный SLA
+									.solutions-row
+										.solutions-row__item Гарантия доступности конечных сервисов вплоть
+										.solutions-row__item <span class="solutions-row__string">до 99,99%</span>
+									.solutions-row.solutions-row--single
+										.solutions-row__item Сопровождение инфраструктуры на всех уровнях: оборудование, ВМ, ОС, базы данных, СРК
+				.solutions__nav.swiper-nav
+					.swiper-btn-prev
+						+icon('chevron-left')(width='28', height='62')
+					.swiper-btn-next
+						+icon('chevron-right')(width='28', height='62')
+			.solutions__pagination.swiper-pagination
 	section.feedback
+		.container
+			+title('Заполните форму и получите полную версию материала: <br> <span>отраслевые ИТ-тренды 2024</span>', 'title--big feedback__title')
+			form.feedback__form
+				.feedback__field.field
+					input(type='text', name='fullName', placeholder='Имя и Фамилия')
+				.feedback__field.field
+					input(type='email', name='email', placeholder='E-mail')
+				.feedback__field.field
+					input(type='text', name='company', placeholder='Компания')
+				.feedback__field.field
+					input(type='tel', name='phone', placeholder='Телефон')
+				.feedback__field.field
+					select.js-custom-select(hidden)
+						option(value='') Предпочтительный способ связи
+						option(value='phone') Телефон
+						option(value='email') E-mail
+				label.feedback__field.field.field--checkbox
+					input(type='checkbox', id='privacy')
+					b
+					span Ознакомлен с <a href="#" target="_blank">Политикой в области обработки персональных данных</a> и даю <a href="#" target="_blank">согласие на их обработку</a>
+				+button('Отправить')(type='submit', class='feedback__submit')
+
+block modals
+	#trend1.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				//button.hystmodal__close(data-hystclose) Закрыть
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Бессерверные вычисления
+							.modal__text.
+								Предоставление облачных ресурсов на основе фактического потребления сервисов. Заказчик не управляет
+								настройками облачной среды, но всегда получает от провайдера именно то количество ресурсов, которое необходимо.
+						.modal__info
+							.modal__years
+								span 2026
+								span 2030
+							.modal__icon
+								+icon('trends1')
+					.modal__bottom
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid.modal__grid--columns2
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Снижение затрат на облачную <br> инфраструктуру
+								.modal-grid-item
+									.modal-grid-item__number 03
+									.modal-grid-item__text Ускорение и упрощение процессов администрирования инфраструктуры
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Рост спроса на event-driven <br> архитектуры
+						.modal__col
+							.modal__tags
+								.modal__tag #Промышленность
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ИТ
+								.modal__tag #Строительство
+								.modal__tag #ритейл
+								.modal__tag #Транспорт
+								.modal__tag #Финансы
+	#trend7.hystmodal(aria-hidden='true')
+		.hystmodal__wrap
+			.hystmodal__window(role='dialog', aria-modal='true')
+				//button.hystmodal__close(data-hystclose) Закрыть
+				.modal
+					.modal__top
+						.modal__content
+							.modal__title Безопасность контейнеров
+							.modal__text Инструменты защиты контейнерных сред, которые компания может реализовать самостоятельно или использовать сервисы облачного провайдера.
+						.modal__info
+							.modal__years
+								span 2025
+								span 2030
+							.modal__icon
+								+icon('trends7')
+					.modal__bottom.modal__bottom--triple
+						.modal__col
+							.modal__subtitle Драйверы тренда
+							.modal__grid
+								.modal-grid-item
+									.modal-grid-item__number 01
+									.modal-grid-item__text Активная адаптация <br> контейнерных сред
+								.modal-grid-item
+									.modal-grid-item__number 02
+									.modal-grid-item__text Рост киберугроз и усиление внимания к аспекту информационной безопасности
+						.modal__col
+							.modal__procent 37%
+							.modal__description компаний сталкивались с потерей клиентов и/или доходов за последние 12 месяцев <br> из-за проблем с безопасностью контейнеров
+						.modal__col
+							.modal__tags
+								.modal__tag #Химия и нефтехимия
+								.modal__tag #Промышленность
+								.modal__tag #Медиа и развлечения
+								.modal__tag #ИТ
+								.modal__tag #Строительство
+								.modal__tag #ритейл
+								.modal__tag #Нефтегаз
+								.modal__tag #Транспорт
+								.modal__tag #ГМК
+								.modal__tag #Финансы

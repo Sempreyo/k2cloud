@@ -1,0 +1,13 @@
+.hystmodal {
+	&__window {
+		max-width: 1040px;
+		width: 100%;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+
+	&:before {
+		opacity: 1;
+		background-color: rgba(2, 31, 41, 0.2);
+	}
+}

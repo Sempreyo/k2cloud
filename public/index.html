@@ -27,19 +27,616 @@
       </div>
     </header>
     <main class="main">
-      <!--section.hero
-      .hero__bg
-      	+picture('hero', 'jpg')
-      	a.hero__logo(href='#', target='_blank')
-      		+icon('logo')(width='108', height='50')
-      -->
-      <section class="articles"></section>
-      <section class="trends"></section>
-      <section class="interview"></section>
-      <section class="solutions"></section>
-      <section class="feedback"></section>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__col">
+            <h1 class="hero__title">K2 <span>Cloud</span></h1>
+            <div class="hero__bottom">
+              <div class="hero__subtitle">Будущее бизнеса — <br> в облаках</div>
+              <div class="hero__text">Бизнес-ориентированное облако и команда экспертов с опытом интеграционных проектов</div>
+            </div>
+          </div>
+          <div class="hero__col">
+            <div class="hero__bg">
+              <picture>
+                <source srcset="./images/bg-grid.webp 1x, ./images/bg-grid@2x.webp 2x" type="image/webp">
+                <source srcset="./images/bg-grid.webp 1x, ./images/bg-grid@2x.webp 2x" type="image/webp"><img src="./images/bg-grid.png" srcset="./images/bg-grid.png 1x, ./images/bg-grid@2x.png 2x">
+              </picture>
+              <picture>
+                <source srcset="./images/astronaut.webp 1x, ./images/astronaut@2x.webp 2x" type="image/webp">
+                <source srcset="./images/astronaut.webp 1x, ./images/astronaut@2x.webp 2x" type="image/webp"><img class="hero__bg-astronaut" src="./images/astronaut.png" srcset="./images/astronaut.png 1x, ./images/astronaut@2x.png 2x">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="articles">
+        <div class="container">
+          <h2 class="title">Статьи</h2>
+          <div class="articles__wrapper">
+            <div class="articles__card articles-card"><a class="articles-card__link" href="#" target="_blank"></a>
+              <div class="articles-card__filler">
+                <picture>
+                  <source srcset="./images/articles/filler.webp 1x, ./images/articles/filler@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/articles/filler.webp 1x, ./images/articles/filler@2x.webp 2x" type="image/webp"><img src="./images/articles/filler.png" srcset="./images/articles/filler.png 1x, ./images/articles/filler@2x.png 2x">
+                </picture>
+              </div>
+              <div class="articles-card__content">
+                <div class="articles-card__title">Облачные тренды-2030</div>
+                <div class="articles-card__text">как будет меняться ИТ-климат</div>
+              </div>
+              <div class="articles-card__image">
+                <picture>
+                  <source srcset="./images/articles/object1.webp 1x, ./images/articles/object1@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/articles/object1.webp 1x, ./images/articles/object1@2x.webp 2x" type="image/webp"><img src="./images/articles/object1.png" srcset="./images/articles/object1.png 1x, ./images/articles/object1@2x.png 2x">
+                </picture>
+              </div>
+              <div class="articles-card__image-blur">
+                <picture>
+                  <source srcset="./images/articles/object1blur.webp 1x, ./images/articles/object1blur@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/articles/object1blur.webp 1x, ./images/articles/object1blur@2x.webp 2x" type="image/webp"><img src="./images/articles/object1blur.png" srcset="./images/articles/object1blur.png 1x, ./images/articles/object1blur@2x.png 2x">
+                </picture>
+              </div>
+              <div class="articles-card__read"><span>читать</span>
+                <svg width="14" height="18">
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="articles__card articles-card articles-card--2"><a class="articles-card__link" href="#" target="_blank"></a>
+              <div class="articles-card__filler">
+                <picture>
+                  <source srcset="./images/articles/filler.webp 1x, ./images/articles/filler@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/articles/filler.webp 1x, ./images/articles/filler@2x.webp 2x" type="image/webp"><img src="./images/articles/filler.png" srcset="./images/articles/filler.png 1x, ./images/articles/filler@2x.png 2x">
+                </picture>
+              </div>
+              <div class="articles-card__content">
+                <div class="articles-card__title">Всепроникающая безопасность</div>
+                <div class="articles-card__text">какие облачные <br> ИБ-решения будут наиболее востребованы и почему</div>
+              </div>
+              <div class="articles-card__image">
+                <picture>
+                  <source srcset="./images/articles/object2.webp 1x, ./images/articles/object2@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/articles/object2.webp 1x, ./images/articles/object2@2x.webp 2x" type="image/webp"><img src="./images/articles/object2.png" srcset="./images/articles/object2.png 1x, ./images/articles/object2@2x.png 2x">
+                </picture>
+              </div>
+              <div class="articles-card__image-blur">
+                <picture>
+                  <source srcset="./images/articles/object2blur.webp 1x, ./images/articles/object2blur@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/articles/object2blur.webp 1x, ./images/articles/object2blur@2x.webp 2x" type="image/webp"><img src="./images/articles/object2blur.png" srcset="./images/articles/object2blur.png 1x, ./images/articles/object2blur@2x.png 2x">
+                </picture>
+              </div>
+              <div class="articles-card__read"><span>читать</span>
+                <svg width="14" height="18">
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trends">
+        <div class="container">
+          <div class="trends__bg">
+            <picture>
+              <source srcset="./images/trends/bg-trends.webp 1x, ./images/trends/bg-trends@2x.webp 2x" type="image/webp">
+              <source srcset="./images/trends/bg-trends.webp 1x, ./images/trends/bg-trends@2x.webp 2x" type="image/webp"><img src="./images/trends/bg-trends.png" srcset="./images/trends/bg-trends.png 1x, ./images/trends/bg-trends@2x.png 2x">
+            </picture>
+          </div>
+          <div class="trends__top">
+            <div class="trends__col">
+              <h2 class="title trends__title">Тренды развития ИТ</h2>
+              <div class="trends__text">На основе аналитических данных <br> по мировому и российскому ИТ-рынкам</div><a class="button trends__button" href="#"><span>Получить полный материал</span></a>
+            </div>
+            <div class="trends__col">
+              <div class="trends__year-1">
+                <picture>
+                  <source srcset="./images/trends/2024.webp 1x, ./images/trends/2024@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/trends/2024.webp 1x, ./images/trends/2024@2x.webp 2x" type="image/webp"><img src="./images/trends/2024.png" srcset="./images/trends/2024.png 1x, ./images/trends/2024@2x.png 2x">
+                </picture>
+              </div>
+              <div class="trends__year-2">
+                <picture>
+                  <source srcset="./images/trends/2030.webp 1x, ./images/trends/2030@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/trends/2030.webp 1x, ./images/trends/2030@2x.webp 2x" type="image/webp"><img src="./images/trends/2030.png" srcset="./images/trends/2030.png 1x, ./images/trends/2030@2x.png 2x">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="trends__bottom">
+            <div class="trends__row trends__row--1">
+              <div class="trends-cell">
+                <div class="trends-cell__title">Облака и ИТ-инфраструктура</div>
+                <div class="trends-cell__grid trends-cell__grid--1"><a class="trends-cell__item" href="#" data-hystmodal="#trend1">
+                    <svg width="70" height="70">
+                      <use xlink:href="./images/sprite.svg#trends1"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend2">
+                    <svg width="103" height="72">
+                      <use xlink:href="./images/sprite.svg#trends2"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend3">
+                    <svg width="84" height="53">
+                      <use xlink:href="./images/sprite.svg#trends3"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend4">
+                    <svg width="86" height="86">
+                      <use xlink:href="./images/sprite.svg#trends4"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend5">
+                    <svg width="94" height="94">
+                      <use xlink:href="./images/sprite.svg#trends5"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend6">
+                    <svg width="69" height="70">
+                      <use xlink:href="./images/sprite.svg#trends6"></use>
+                    </svg></a></div>
+              </div>
+              <div class="trends-cell">
+                <div class="trends-cell__title">Всепроникающая кибербезопасность</div>
+                <div class="trends-cell__grid trends-cell__grid--2"><a class="trends-cell__item" href="#" data-hystmodal="#trend7">
+                    <svg width="72" height="93">
+                      <use xlink:href="./images/sprite.svg#trends7"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend8">
+                    <svg width="70" height="92">
+                      <use xlink:href="./images/sprite.svg#trends8"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend9">
+                    <svg width="79" height="78">
+                      <use xlink:href="./images/sprite.svg#trends9"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="trends__row trends__row--2">
+              <div class="trends-cell">
+                <div class="trends-cell__title">Хранение данных</div>
+                <div class="trends-cell__grid trends-cell__grid--3"><a class="trends-cell__item" href="#" data-hystmodal="#trend10">
+                    <svg width="74" height="71">
+                      <use xlink:href="./images/sprite.svg#trends10"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="trends__row trends__row--3">
+              <div class="trends-cell">
+                <div class="trends-cell__title">Разработка цифровых сервисов</div>
+                <div class="trends-cell__grid trends-cell__grid--4"><a class="trends-cell__item" href="#" data-hystmodal="#trend11">
+                    <svg width="80" height="91">
+                      <use xlink:href="./images/sprite.svg#trends11"></use>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend12">
+                    <svg width="82" height="72">
+                      <use xlink:href="./images/sprite.svg#trends12"></use>
+                    </svg></a></div>
+              </div>
+              <div class="trends-cell">
+                <div class="trends-cell__title">Инфраструктура для ИИ</div>
+                <div class="trends-cell__grid trends-cell__grid--5"><a class="trends-cell__item" href="#" data-hystmodal="#trend13">
+                    <svg class="trends-cell__icon-gpu" width="84" height="85" viewbox="0 0 84 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.749481" y="0.955811" width="83.1516" height="83.1516" rx="15.7137" fill="currentColor"></rect>
+                      <path d="M29.1392 37.9204H20.439C18.8257 37.9204 17.7022 38.2757 17.0684 38.9863C16.4346 39.6777 16.1178 41.0125 16.1178 42.9907C16.1178 44.9688 16.4346 46.3132 17.0684 47.0238C17.7022 47.7152 18.8257 48.0609 20.439 48.0609H21.8218C22.6669 48.0609 23.0894 47.6384 23.0894 46.7934V42.4145H29.6001V49.9047C29.6001 50.9034 29.3216 51.6812 28.7647 52.2382C28.2077 52.7951 27.4299 53.0736 26.4312 53.0736H18.2496C15.0038 53.0736 12.7184 52.2862 11.3932 50.7113C10.0872 49.1173 9.4342 46.5437 9.4342 42.9907C9.4342 39.4376 10.0872 36.8737 11.3932 35.2988C12.7184 33.7047 15.0038 32.9077 18.2496 32.9077H29.1392V37.9204ZM38.4087 53.0736H31.898V36.0766C31.898 35.0779 32.1765 34.3001 32.7335 33.7432C33.2904 33.1862 34.0683 32.9077 35.0669 32.9077H46.5039C48.6933 32.9077 50.201 33.4839 51.0268 34.6362C51.8527 35.7886 52.2656 37.5939 52.2656 40.0522C52.2656 42.5105 51.8527 44.3255 51.0268 45.497C50.201 46.6685 48.6933 47.2543 46.5039 47.2543H38.4087V53.0736ZM38.4087 42.2416H42.9893C43.8919 42.2416 44.5449 42.088 44.9482 41.7807C45.3708 41.4542 45.582 40.878 45.582 40.0522C45.582 39.2264 45.3804 38.6694 44.977 38.3813C44.5737 38.074 43.9111 37.9204 42.9893 37.9204H39.6763C38.8312 37.9204 38.4087 38.3429 38.4087 39.1879V42.2416ZM61.9195 47.2255C62.4957 47.7825 63.3792 48.0609 64.5699 48.0609C65.7607 48.0609 66.6345 47.7825 67.1915 47.2255C67.7677 46.6685 68.0557 45.7563 68.0557 44.4887V32.9077H74.5664V45.0073C74.5664 48.0417 73.731 50.1832 72.0601 51.4315C70.4084 52.6799 67.9117 53.3041 64.5699 53.3041C61.2281 53.3041 58.7218 52.6799 57.0509 51.4315C55.3992 50.1832 54.5734 48.0417 54.5734 45.0073V32.9077H61.0841V44.4887C61.0841 45.7563 61.3626 46.6685 61.9195 47.2255Z"></path>
+                    </svg></a><a class="trends-cell__item" href="#" data-hystmodal="#trend14">
+                    <svg width="69" height="84">
+                      <use xlink:href="./images/sprite.svg#trends14"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="interview">
+        <div class="container">
+          <h2 class="title title--big">Интервью с экспертами</h2>
+          <div class="interview__wrapper">
+            <div class="interview__card interview-card"><a class="interview-card__link" href="#" target="_blank"></a>
+              <div class="interview-card__image">
+                <picture>
+                  <source srcset="./images/interview/1.webp 1x, ./images/interview/1@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/interview/1.webp 1x, ./images/interview/1@2x.webp 2x" type="image/webp"><img src="./images/interview/1.png" srcset="./images/interview/1.png 1x, ./images/interview/1@2x.png 2x">
+                </picture>
+              </div>
+              <div class="interview-card__filler">
+                <div class="interview-card__filler-angle"></div>
+                <div class="interview-card__filler-blocks"></div>
+              </div>
+              <div class="interview-card__content">
+                <div class="interview-card__type">BUSINESS VIEW</div>
+                <div class="interview-card__middle">
+                  <div class="interview-card__quote">
+                    <svg width="27" height="15">
+                      <use xlink:href="./images/sprite.svg#quotes"></use>
+                    </svg><span>Пользователи стали доверять облакам. <br> Что изменилось?</span>
+                  </div>
+                  <div class="interview-card__name">Сергей Зинкевич</div>
+                  <div class="interview-card__position">Директор K2 Cloud</div>
+                </div>
+                <div class="interview-card__read">Читать интервью</div>
+              </div>
+            </div>
+            <div class="interview__card interview-card"><a class="interview-card__link" href="#" target="_blank"></a>
+              <div class="interview-card__image">
+                <picture>
+                  <source srcset="./images/interview/2.webp 1x, ./images/interview/2@2x.webp 2x" type="image/webp">
+                  <source srcset="./images/interview/2.webp 1x, ./images/interview/2@2x.webp 2x" type="image/webp"><img src="./images/interview/2.png" srcset="./images/interview/2.png 1x, ./images/interview/2@2x.png 2x">
+                </picture>
+              </div>
+              <div class="interview-card__filler">
+                <div class="interview-card__filler-angle"></div>
+                <div class="interview-card__filler-blocks"></div>
+              </div>
+              <div class="interview-card__content">
+                <div class="interview-card__type">TECH VIEW</div>
+                <div class="interview-card__middle">
+                  <div class="interview-card__quote">
+                    <svg width="27" height="15">
+                      <use xlink:href="./images/sprite.svg#quotes"></use>
+                    </svg><span>Базовые облачные сервисы востребованы <br> у клиентов, но многие провайдеры о них забыли</span>
+                  </div>
+                  <div class="interview-card__name">Кирилл Бойко</div>
+                  <div class="interview-card__position">Технический директор K2 Cloud</div>
+                </div>
+                <div class="interview-card__read">Читать интервью</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="solutions">
+        <div class="container">
+          <h2 class="title title--big">Наш портфель решений</h2>
+          <div class="solutions__slider-outer">
+            <div class="solutions__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="solutions-card swiper-slide">
+                  <div class="solutions-card__bg">
+                    <picture>
+                      <source srcset="./images/solutions/1.webp 1x, ./images/solutions/1@2x.webp 2x" type="image/webp">
+                      <source srcset="./images/solutions/1.webp 1x, ./images/solutions/1@2x.webp 2x" type="image/webp"><img src="./images/solutions/1.png" srcset="./images/solutions/1.png 1x, ./images/solutions/1@2x.png 2x">
+                    </picture>
+                  </div>
+                  <div class="solutions-card__wrapper">
+                    <div class="solutions-card__col">
+                      <div class="solutions-card__content">
+                        <div class="solutions-card__title">К2 Облако</div>
+                        <div class="solutions-card__text">Надежная и производительная среда собственной разработки для быстрого развертывания корпоративных приложений и сервисов с тремя зонами доступности на базе сети дата-центров</div>
+                      </div><a class="solutions-card__link" href="#" target="_blank">
+                        <svg width="20" height="25">
+                          <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                        </svg><span>Подробнее</span></a>
+                    </div>
+                    <div class="solutions-card__col">
+                      <div class="solutions-row">
+                        <div class="solutions-row__item">Высокоскоростное подключение</div>
+                        <div class="solutions-row__item">до <span class="solutions-row__string">10</span> Гбит/с</div>
+                      </div>
+                      <div class="solutions-row">
+                        <div class="solutions-row__item">Выделенная техническая команда на каждый проект</div>
+                        <div class="solutions-row__item"><span class="solutions-row__string">400+</span> <br> <span class="solutions-row__string--small">экспертов</span></div>
+                      </div>
+                      <div class="solutions-row">
+                        <div class="solutions-row__item">Время реакции <br> 10 мин</div>
+                        <div class="solutions-row__item"><span class="solutions-row__string--small">SLA</span> <br> <span class="solutions-row__string">99,95%</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="solutions-card swiper-slide">
+                  <div class="solutions-card__bg">
+                    <picture>
+                      <source srcset="./images/solutions/2.webp 1x, ./images/solutions/2@2x.webp 2x" type="image/webp">
+                      <source srcset="./images/solutions/2.webp 1x, ./images/solutions/2@2x.webp 2x" type="image/webp"><img src="./images/solutions/2.png" srcset="./images/solutions/2.png 1x, ./images/solutions/2@2x.png 2x">
+                    </picture>
+                  </div>
+                  <div class="solutions-card__wrapper">
+                    <div class="solutions-card__col">
+                      <div class="solutions-card__content">
+                        <div class="solutions-card__title">Локализация</div>
+                        <div class="solutions-card__text">Бесперебойная миграция бизнеса с международных платформ в ИТ-контур <br> на базе К2 Облака</div>
+                      </div><a class="solutions-card__link" href="#" target="_blank">
+                        <svg width="20" height="25">
+                          <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                        </svg><span>Подробнее</span></a>
+                    </div>
+                    <div class="solutions-card__col">
+                      <div class="solutions-row solutions-row--list">
+                        <div class="solutions-row__item"></div>
+                        <div class="solutions-row__item">Запуск автономной работы ИТ <br> без расширения ИТ-команды</div>
+                      </div>
+                      <div class="solutions-row solutions-row--list">
+                        <div class="solutions-row__item"></div>
+                        <div class="solutions-row__item">Непрерывность критичных <br> бизнес-процессов при отделении от головной компании</div>
+                      </div>
+                      <div class="solutions-row solutions-row--list">
+                        <div class="solutions-row__item"></div>
+                        <div class="solutions-row__item">Комплексная услуга из одного окна – инфраструктура и core-сервисы, кибербезопасность и бизнес-приложения.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="solutions-card swiper-slide">
+                  <div class="solutions-card__bg">
+                    <picture>
+                      <source srcset="./images/solutions/3.webp 1x, ./images/solutions/3@2x.webp 2x" type="image/webp">
+                      <source srcset="./images/solutions/3.webp 1x, ./images/solutions/3@2x.webp 2x" type="image/webp"><img src="./images/solutions/3.png" srcset="./images/solutions/3.png 1x, ./images/solutions/3@2x.png 2x">
+                    </picture>
+                  </div>
+                  <div class="solutions-card__wrapper">
+                    <div class="solutions-card__col">
+                      <div class="solutions-card__content">
+                        <div class="solutions-card__title">Корпоративное хранилище данных</div>
+                        <div class="solutions-card__text">Сервис хранения и аналитики данных: вычислительные ресурсы К2 Облака, лицензии Arenadata, поддержка 24/7 с ежемесячной оплатой</div>
+                        <div class="solutions-card__logo">
+                          <picture>
+                            <source srcset="./images/solutions/logo.webp 1x, ./images/solutions/logo@2x.webp 2x" type="image/webp">
+                            <source srcset="./images/solutions/logo.webp 1x, ./images/solutions/logo@2x.webp 2x" type="image/webp"><img src="./images/solutions/logo.png" srcset="./images/solutions/logo.png 1x, ./images/solutions/logo@2x.png 2x">
+                          </picture>
+                        </div>
+                      </div><a class="solutions-card__link" href="#" target="_blank">
+                        <svg width="20" height="25">
+                          <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                        </svg><span>Подробнее</span></a>
+                    </div>
+                    <div class="solutions-card__col">
+                      <div class="solutions-row solutions-row--list">
+                        <div class="solutions-row__item"></div>
+                        <div class="solutions-row__item">Распределенное хранение больших объемов информации — до десятков петабайт</div>
+                      </div>
+                      <div class="solutions-row solutions-row--list">
+                        <div class="solutions-row__item"></div>
+                        <div class="solutions-row__item">Высокая производительность и практически неограниченная масштабируемость</div>
+                      </div>
+                      <div class="solutions-row solutions-row--list">
+                        <div class="solutions-row__item"></div>
+                        <div class="solutions-row__item">Готовый сервис без капитальных затрат: не нужно покупать оборудование, лицензии и вендорскую поддержку</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="solutions-card swiper-slide">
+                  <div class="solutions-card__bg">
+                    <picture>
+                      <source srcset="./images/solutions/4.webp 1x, ./images/solutions/4@2x.webp 2x" type="image/webp">
+                      <source srcset="./images/solutions/4.webp 1x, ./images/solutions/4@2x.webp 2x" type="image/webp"><img src="./images/solutions/4.png" srcset="./images/solutions/4.png 1x, ./images/solutions/4@2x.png 2x">
+                    </picture>
+                  </div>
+                  <div class="solutions-card__wrapper">
+                    <div class="solutions-card__col">
+                      <div class="solutions-card__content">
+                        <div class="solutions-card__title">1С в Облаке</div>
+                        <div class="solutions-card__text">Решение под ключ: аудит, размещение систем от 100 пользователей, предоставление лицензий, техподдержка</div>
+                      </div><a class="solutions-card__link" href="#" target="_blank">
+                        <svg width="20" height="25">
+                          <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                        </svg><span>Подробнее</span></a>
+                    </div>
+                    <div class="solutions-card__col">
+                      <div class="solutions-row solutions-row--single">
+                        <div class="solutions-row__item">Повышение производительности и улучшение качества работы систем 1С по сравнению <br> с локальной инфраструктурой</div>
+                      </div>
+                      <div class="solutions-row solutions-row--single">
+                        <div class="solutions-row__item">Импортозамещение ERP: <br> от подбора конфигурации и проектирования <br> до внедрения и настройки</div>
+                      </div>
+                      <div class="solutions-row solutions-row--single">
+                        <div class="solutions-row__item">Быстрый старт удаленной работы <br> с различными версиями баз 1С</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="solutions-card swiper-slide">
+                  <div class="solutions-card__bg">
+                    <picture>
+                      <source srcset="./images/solutions/5.webp 1x, ./images/solutions/5@2x.webp 2x" type="image/webp">
+                      <source srcset="./images/solutions/5.webp 1x, ./images/solutions/5@2x.webp 2x" type="image/webp"><img src="./images/solutions/5.png" srcset="./images/solutions/5.png 1x, ./images/solutions/5@2x.png 2x">
+                    </picture>
+                  </div>
+                  <div class="solutions-card__wrapper">
+                    <div class="solutions-card__col">
+                      <div class="solutions-card__content">
+                        <div class="solutions-card__title">Администрирование ИТ-инфраструктуры</div>
+                        <div class="solutions-card__text">Круглосуточное сопровождение вашей ИТ-инфраструктуры, решение задач <br> по ее изменению и развитию</div>
+                      </div><a class="solutions-card__link" href="#" target="_blank">
+                        <svg width="20" height="25">
+                          <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                        </svg><span>Подробнее</span></a>
+                    </div>
+                    <div class="solutions-card__col">
+                      <div class="solutions-row solutions-row--single">
+                        <div class="solutions-row__item">Мониторинг и поддержка 24х7, время реакции 10 минут, детализированный SLA</div>
+                      </div>
+                      <div class="solutions-row">
+                        <div class="solutions-row__item">Гарантия доступности конечных сервисов вплоть</div>
+                        <div class="solutions-row__item"><span class="solutions-row__string">до 99,99%</span></div>
+                      </div>
+                      <div class="solutions-row solutions-row--single">
+                        <div class="solutions-row__item">Сопровождение инфраструктуры на всех уровнях: оборудование, ВМ, ОС, базы данных, СРК</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="solutions__nav swiper-nav">
+              <div class="swiper-btn-prev">
+                <svg width="28" height="62">
+                  <use xlink:href="./images/sprite.svg#chevron-left"></use>
+                </svg>
+              </div>
+              <div class="swiper-btn-next">
+                <svg width="28" height="62">
+                  <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__pagination swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <h2 class="title title--big feedback__title">Заполните форму и получите полную версию материала: <br> <span>отраслевые ИТ-тренды 2024</span></h2>
+          <form class="feedback__form">
+            <div class="feedback__field field">
+              <input type="text" name="fullName" placeholder="Имя и Фамилия">
+            </div>
+            <div class="feedback__field field">
+              <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="feedback__field field">
+              <input type="text" name="company" placeholder="Компания">
+            </div>
+            <div class="feedback__field field">
+              <input type="tel" name="phone" placeholder="Телефон">
+            </div>
+            <div class="feedback__field field">
+              <select class="js-custom-select" hidden>
+                <option value="">Предпочтительный способ связи</option>
+                <option value="phone">Телефон</option>
+                <option value="email">E-mail</option>
+              </select>
+            </div>
+            <label class="feedback__field field field--checkbox">
+              <input type="checkbox" id="privacy"><b></b><span>Ознакомлен с <a href="#" target="_blank">Политикой в области обработки персональных данных</a> и даю <a href="#" target="_blank">согласие на их обработку</a></span>
+            </label>
+            <button class="button feedback__submit" type="submit"><span>Отправить</span></button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__col"><a class="footer__logo" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#logo-2"></use>
+            </svg></a>
+          <div class="footer__slogan">Управляем вашей инфраструктурой <br> и ускоряем бизнес</div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__contacts"><a class="footer__email" href="mailto:info@k2.cloud">info@k2.cloud</a><a class="footer__phone" href="tel:+74950193666">+7 (495) 019-36-66</a></div>
+          <ul class="footer__socials">
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="26" height="23">
+                  <use xlink:href="./images/sprite.svg#socials-bot"></use>
+                </svg></a></li>
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="23" height="20">
+                  <use xlink:href="./images/sprite.svg#socials-tg"></use>
+                </svg></a></li>
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="18" height="19">
+                  <use xlink:href="./images/sprite.svg#socials-habr"></use>
+                </svg></a></li>
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="29" height="19">
+                  <use xlink:href="./images/sprite.svg#socials-yt"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
+  <div class="hystmodal" id="trend1" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <!--button.hystmodal__close(data-hystclose) Закрыть-->
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Бессерверные вычисления</div>
+              <div class="modal__text">
+                Предоставление облачных ресурсов на основе фактического потребления сервисов. Заказчик не управляет
+                настройками облачной среды, но всегда получает от провайдера именно то количество ресурсов, которое необходимо.
+              </div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2026</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends1"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid modal__grid--columns2">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Снижение затрат на облачную <br> инфраструктуру</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">03</div>
+                  <div class="modal-grid-item__text">Ускорение и упрощение процессов администрирования инфраструктуры</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Рост спроса на event-driven <br> архитектуры</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#Строительство</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Транспорт</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hystmodal" id="trend7" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <!--button.hystmodal__close(data-hystclose) Закрыть-->
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__content">
+              <div class="modal__title">Безопасность контейнеров</div>
+              <div class="modal__text">Инструменты защиты контейнерных сред, которые компания может реализовать самостоятельно или использовать сервисы облачного провайдера.</div>
+            </div>
+            <div class="modal__info">
+              <div class="modal__years"><span>2025</span><span>2030</span></div>
+              <div class="modal__icon">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#trends7"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal__bottom modal__bottom--triple">
+            <div class="modal__col">
+              <div class="modal__subtitle">Драйверы тренда</div>
+              <div class="modal__grid">
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">01</div>
+                  <div class="modal-grid-item__text">Активная адаптация <br> контейнерных сред</div>
+                </div>
+                <div class="modal-grid-item">
+                  <div class="modal-grid-item__number">02</div>
+                  <div class="modal-grid-item__text">Рост киберугроз и усиление внимания к аспекту информационной безопасности</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__procent">37%</div>
+              <div class="modal__description">компаний сталкивались с потерей клиентов и/или доходов за последние 12 месяцев <br> из-за проблем с безопасностью контейнеров</div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__tags">
+                <div class="modal__tag">#Химия и нефтехимия</div>
+                <div class="modal__tag">#Промышленность</div>
+                <div class="modal__tag">#Медиа и развлечения</div>
+                <div class="modal__tag">#ИТ</div>
+                <div class="modal__tag">#Строительство</div>
+                <div class="modal__tag">#ритейл</div>
+                <div class="modal__tag">#Нефтегаз</div>
+                <div class="modal__tag">#Транспорт</div>
+                <div class="modal__tag">#ГМК</div>
+                <div class="modal__tag">#Финансы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/main.min.js"></script>
 </html>

@@ -2,19 +2,20 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	max-width: 243px;
+	max-width: 336px;
 	width: 100%;
-	padding: 14px;
-	border-radius: 3px;
-	background-color: $white;
-	color: $color-background;
-	font-size: 16px;
-	line-height: 1.2;
+	padding: 12px 20px;
+	border-radius: 16px;
+	background-color: $color-main;
+	color: $black;
+	font-size: 18px;
+	line-height: 1;
 	text-align: center;
+	text-transform: uppercase;
 	cursor: pointer;
 	transition: 0.3s ease;
 
 	&:hover {
-		background-color: rgba($white, 0.7);
+		background-color: rgba($color-main, 0.7);
 	}
 }

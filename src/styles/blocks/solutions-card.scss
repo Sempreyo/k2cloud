@@ -1,0 +1,73 @@
+.solutions-card {
+	position: relative;
+	background-color: $black;
+	border-radius: 40px;
+	overflow: hidden;
+	padding: 8px 8px 8px 38px;
+	color: $white;
+
+	&__bg {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&:first-child {
+			width: calc(38% - 10px);
+			padding: 22px 0 28px;
+		}
+
+		&:last-child {
+			gap: 9px;
+			width: calc(58% - 10px);
+		}
+	}
+
+	&__title {
+		font-size: 32px;
+	}
+
+	&__text {
+		font-family: $secondFont;
+		font-weight: 300;
+		font-size: 16px;
+		margin-top: 8px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-family: $secondFont;
+		font-weight: 700;
+		font-size: 16px;
+		color: $color-main;
+
+		&:hover svg {
+			transform: translateX(6px);
+		}
+
+		svg {
+			color: $color-main;
+			transition: 0.3s ease;
+		}
+	}
+
+	&__logo {
+		max-width: 168px;
+		margin-top: 20px;
+	}
+}

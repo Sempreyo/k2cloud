@@ -1,0 +1,14 @@
+.modal-grid-item {
+	&__number {
+		font-family: $secondFont;
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	&__text {
+		font-family: $secondFont;
+		font-weight: 300;
+		font-size: 16px;
+		margin-top: 4px;
+	}
+}
