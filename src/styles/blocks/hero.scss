@@ -86,12 +86,9 @@
 		}
 
 		@include max(ti) {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 20px;
 			width: 100%;
 			font-size: fluid(35, 90, 0, 768);
+			text-align: center;
 		}
 
 		span {

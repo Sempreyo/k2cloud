@@ -1,0 +1,178 @@
+.article-annonce {
+	position: relative;
+	display: flex;
+
+	@include max(ti) {
+		flex-direction: column;
+	}
+
+	&__image,
+	&__image-small {
+		position: absolute;
+		z-index: 1;
+	}
+
+	&__image {
+		max-width: 35%;
+		bottom: calc(100% - 300px);
+		right: 31px;
+		pointer-events: none;
+
+		@include max(ti) {
+			max-width: 80px;
+			top: 10px;
+			bottom: unset;
+			right: 10px;
+		}
+
+		@include max(t) {
+			top: -60px;
+		}
+	}
+
+	&__image-small {
+		max-width: 18%;
+		top: calc(100% + 47px);
+		left: 80px;
+		pointer-events: none;
+
+		@include max(ti) {
+			max-width: 80px;
+			top: unset;
+			bottom: 10px;
+			left: 10px;
+		}
+
+		@include max(t) {
+			bottom: -60px;
+		}
+	}
+
+	&__title {
+		position: relative;
+		width: 50.4%;
+		color: $color-main;
+		font-weight: 400;
+		font-size: 46px;
+		line-height: 1;
+		padding: 44px 62px 44px 42px;
+
+		@include max(d) {
+			font-size: fluid(30, 46, 992, 1280);
+		}
+
+		@include max(tl) {
+			font-size: fluid(28, 30, 768, 992);
+		}
+
+		@include max(ti) {
+			width: 100%;
+			padding: 20px 100px 0 20px;
+			font-size: fluid(24, 28, 0, 768);
+		}
+
+		@include max(t) {
+			padding-right: 20px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			background-color: $black;
+			border-radius: 40px;
+
+			@include max(ti) {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+		}
+	}
+
+	&__filler-angle,
+	&__filler-angle-2 {
+		position: absolute;
+		width: 70px;
+		height: 70px;
+		background-color: $black;
+
+		@include max(ti) {
+			display: none;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-color: $color-background;
+		}
+	}
+
+	&__filler-angle {
+		top: 45px;
+		left: 100%;
+
+		&::after {
+			border-bottom-left-radius: 50%;
+		}
+	}
+
+	&__filler-angle-2 {
+		top: 100%;
+		right: 100px;
+
+		&::after {
+			border-top-right-radius: 50%;
+		}
+	}
+
+	&__text {
+		position: relative;
+		width: 66.5%;
+		font-family: $secondFont;
+		color: $white;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 1;
+		padding: 182px 41px 31px 48px;
+		margin-top: 115px;
+		margin-left: -100px;
+		margin-bottom: -27%;
+
+		@include max(d) {
+			font-size: fluid(22, 24, 992, 1280);
+		}
+
+		@include max(tl) {
+			font-size: fluid(18, 22, 768, 992);
+		}
+
+		@include max(ti) {
+			width: 100%;
+			padding: 20px 20px 35px 100px;
+			margin-top: 0;
+			margin-left: 0;
+			margin-bottom: 0;
+			font-size: fluid(16, 18, 0, 768);
+		}
+
+		@include max(t) {
+			padding-left: 20px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			background-color: $black;
+			border-radius: 40px;
+
+			@include max(ti) {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+		}
+	}
+}

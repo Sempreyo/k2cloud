@@ -3,15 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const HEADER_SCROLL_HIDE = 400;
     const selects = $(".js-custom-select");
 
-    selects.select2({
-        minimumResultsForSearch: -1
-    });
-
-    const myModal = new HystModal({
-        linkAttributeName: "data-hystmodal"
-    });
-
-    AOS.init();
+    if (selects && selects.length > 0) {
+        selects.select2({
+            minimumResultsForSearch: -1
+        });
+    }
 
     const openNav = () => {
         let bodyState = document.body.getAttribute("data-state");
@@ -64,11 +60,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (anchors && anchors.length > 0) {
         anchors.forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+                //e.preventDefault();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                if (window.location.hash) {
+                    document.querySelector(window.location.hash).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
 
                 if (window.matchMedia("(max-width: 767px)").matches) {
                     openNav();
@@ -77,27 +75,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    /* Разделить строку на символы */
-    const splitText = new SplitType(".hero__title", {
-        types: "chars"
-    });
-
-    /* Анимация появления символов */
     const hero = document.querySelector(".hero");
-
-    const heroObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const chars = document.querySelectorAll(".hero__title .char");
-
-                chars.forEach((el, index) => {
-                    setTimeout(() => {
-                        el.style.transform = 'translateY(0)';
-                    }, 50 * index);
-                });
-            }
+    if (hero) {
+        /* Разделить строку на символы */
+        const splitText = new SplitType(".hero__title", {
+            types: "chars"
         });
-    });
 
-    heroObserver.observe(hero);
+        /* Анимация появления символов */
+        const heroObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const chars = document.querySelectorAll(".hero__title .char");
+
+                    chars.forEach((el, index) => {
+                        setTimeout(() => {
+                            el.style.transform = 'translateY(0)';
+                        }, 50 * index);
+                    });
+                }
+            });
+        });
+
+        heroObserver.observe(hero);
+    }
 });
