@@ -1,0 +1,28 @@
+.stat-column {
+	&__value {
+		font-size: 16px;
+		line-height: 1;
+
+		span {
+			font-size: 42px;
+			line-height: 1;
+		}
+	}
+
+	&__pile {
+		border-radius: 2px;
+		background-color: $color-main;
+		margin-top: 5px;
+
+		&--white {
+			background-color: $white;
+		}
+	}
+
+	&__year {
+		font-family: $secondFont;
+		font-weight: 300;
+		font-size: 16px;
+		margin-top: 5px;
+	}
+}

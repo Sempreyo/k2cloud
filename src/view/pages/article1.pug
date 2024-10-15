@@ -1,0 +1,75 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'K2 Cloud'
+		};
+
+block main
+	.article-block
+		.article-block__top
+			.container
+				.article-annonce
+					picture.article-annonce__image
+						source(srcset='./images/article/annonce1.webp 1x, ./images/article/annonce1@2x.webp 2x' type='image/webp')
+						source(srcset='./images/article/annonce1.webp 1x, ./images/article/annonce1@2x.webp 2x' type='image/webp')
+						img(src='./images/article/annonce1.png' srcset='./images/article/annonce1.png 1x, ./images/article/annonce1@2x.png 2x')
+					picture.article-annonce__image-small
+						source(srcset='./images/article/annonce1small.webp 1x, ./images/article/annonce1small@2x.webp 2x' type='image/webp')
+						source(srcset='./images/article/annonce1small.webp 1x, ./images/article/annonce1small@2x.webp 2x' type='image/webp')
+						img(src='./images/article/annonce1small.png' srcset='./images/article/annonce1small.png 1x, ./images/article/annonce1small@2x.png 2x')
+					h1.article-annonce__title Облачные тренды-2030
+						.article-annonce__filler-angle
+						.article-annonce__filler-angle-2
+					.article-annonce__text.
+						Вычислительные ресурсы предоставляются в аренду, разработка унифицируется, а рутинные задачи делегируются
+						ИИ — таковы главные тренды в ИТ последних и предстоящих лет. В целях оптимизации компании всё чаще предпочитают
+						использовать серверы и процессоры только по мере надобности и заменять собственную инфраструктуру на облачные
+						платформы. Какие тренды наиболее заметны и что выступает драйверами роста — в материале CNews.ru.
+		.article-block__main
+			.container.article-block__container
+				.article-block__tags.tags
+					.tags__item Облака и ИТ-инфраструктура
+					.tags__item Хранение данных
+					.tags__item Разработка цифровых сервисов
+					.tags__item Инфраструктура для ИИ
+				.article-block__title Облака и ИТ-инфраструктура
+				.article-part
+					.article-part__top
+						h2.article-part__title Бессерверные вычисления
+						.article-part__years
+							span 2026
+							span 2030
+					.article-part__main
+						.article-part__col
+							.article-part__text.
+								В рамках модели бессерверных вычислений облачные ресурсы предоставляются по факту использования — как в
+								случае поминутной тарификации вместо абонентской платы. Причем ни резервировать серверы, ни оплачивать
+								фиксированную пропускную способность не требуется — масштабирование услуги происходит автоматически.
+								Управление настройками облачной среды со стороны пользователя не предусмотрено, но в его распоряжении
+								всегда оказывается столько ресурсов, сколько ему требуется. И, конечно, бессерверными вычисления являются
+								для заказчика, но не для поставщика. Последний берет на себя все заботы об инфраструктуре, конфигурации
+								и производительности.
+						.article-part__col
+							.infographic
+								.infographic__title Мировой рынок бессерверных вычислений
+								.infographic__wrapper
+									.infographic__col
+										.stat-column
+											.stat-column__value <span>7,5</span> млрд $
+											.stat-column__pile.stat-column__pile--white(style='height: 31px;')
+											.stat-column__year 2023 год
+									.infographic__col
+										.stat-column
+											.stat-column__value <span>29</span> млрд $
+											.stat-column__pile(style='height: 121px;')
+											.stat-column__year 2030 год
+								.stat-progress
+									.stat-progress__value
+										span 20%
+										+icon('')
+									.stat-progress__text cреднегодовые темпы роста
+				a.article-block__link(href='/')
+					+icon('arrow-right')(width='20', height='25')
+					span Вернуться на главную

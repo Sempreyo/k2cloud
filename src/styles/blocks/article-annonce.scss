@@ -31,8 +31,8 @@
 	}
 
 	&__image-small {
-		max-width: 18%;
-		top: calc(100% + 47px);
+		max-width: 23%;
+		top: calc(100% + 30px);
 		left: 80px;
 		pointer-events: none;
 
@@ -55,10 +55,10 @@
 		font-weight: 400;
 		font-size: 46px;
 		line-height: 1;
-		padding: 44px 62px 44px 42px;
+		padding: 40px 62px 44px 42px;
 
 		@include max(d) {
-			font-size: fluid(30, 46, 992, 1280);
+			font-size: fluid(30, 46, 992, 1200);
 		}
 
 		@include max(tl) {
@@ -141,7 +141,7 @@
 		margin-bottom: -27%;
 
 		@include max(d) {
-			font-size: fluid(22, 24, 992, 1280);
+			font-size: fluid(22, 24, 992, 1200);
 		}
 
 		@include max(tl) {

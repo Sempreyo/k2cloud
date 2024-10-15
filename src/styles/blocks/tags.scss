@@ -1,0 +1,14 @@
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
+
+	&__item {
+		padding: 9px 11px;
+		border: 1px solid $color-main;
+		border-radius: 12px;
+		font-size: 18px;
+		line-height: 1;
+	}
+}
