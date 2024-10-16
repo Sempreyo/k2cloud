@@ -1,3 +1,20 @@
 .stat-progress {
+    &__value {
+        display: flex;
+        align-items: flex-start;
+        gap: 3px;
+        color: $color-main;
+        font-size: 42px;
+        line-height: 1.15;
 
+        svg {
+            color: $color-main;
+        }
+    }
+
+    &__text {
+        font-family: $secondFont;
+        font-weight: 300;
+        font-size: 16px;
+    }
 }

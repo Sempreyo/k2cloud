@@ -1,0 +1,44 @@
+.article-list {
+    background-color: $black;
+    color: $white;
+    border-radius: 2px;
+    padding: 24px 24px 30px;
+
+    &__title {
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px 70px;
+        list-style-image: url("../images/dot.png");
+        list-style-position: outside;
+        padding: 0 24px;
+        border-radius: 2px;
+        background-color: $black;
+        margin-top: 27px;
+        margin-bottom: 0;
+
+        li {
+            width: calc(50% - 35px);
+            font-family: $secondFont;
+            color: $white;
+            font-weight: 300;
+            font-size: 16px;
+
+            @include max(t) {
+                width: 100%;
+            }
+        }
+
+        &--columns-3 {
+            gap: 27px 60px;
+
+            li {
+                width: calc(33.3333% - 60px / 3 * 2);
+            }
+        }
+    }
+}

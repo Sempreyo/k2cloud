@@ -35,7 +35,7 @@ block main
 					.tags__item Разработка цифровых сервисов
 					.tags__item Инфраструктура для ИИ
 				.article-block__title Облака и ИТ-инфраструктура
-				.article-part
+				.article-block__part.article-part
 					.article-part__top
 						h2.article-part__title Бессерверные вычисления
 						.article-part__years
@@ -65,11 +65,132 @@ block main
 											.stat-column__value <span>29</span> млрд $
 											.stat-column__pile(style='height: 121px;')
 											.stat-column__year 2030 год
-								.stat-progress
+								.infographic__progress.stat-progress
 									.stat-progress__value
 										span 20%
-										+icon('')
+										+icon('progress-up')(width='14', height='10')
 									.stat-progress__text cреднегодовые темпы роста
+				.article-block__list.article-list
+					.article-list__title Драйверы тренда
+					ul.article-list__list.article-list__list--columns-3
+						li Снижение затрат на облачную инфраструктуру
+						li Ускорение и упрощение <br> процессов администрирования инфраструктуры
+						li Рост спроса на event-driven архитектуры
+				.article-block__part.article-part
+					.article-part__top
+						h2.article-part__title Мультиоблачная/гибридная среда
+						.article-part__years
+							span 2027
+							span 2030
+					.article-part__main
+						.article-part__col
+							.article-part__text
+								p.
+									Если бизнес использует облачные сервисы от разных провайдеров, это означает, что он работает в мультиоблачной среде. 
+									Например, у одного поставщика компания может развернуть виртуальные рабочие столы, у другого — 1С, а у третьего — CRM-систему. 
+									Причем можно сочетать разные типы решений — IaaS, PaaS, SaaS и те же бессерверные вычисления. Главное преимущество этого 
+									подхода — возможность сформировать оптимальный портфель из облачных сервисов, опираясь на такие критерии, как стоимость, 
+									производительность и требования безопасности.
+								p.
+									Гибридная среда тоже предполагает сочетание — но не публичных облаков разных провайдеров, а частного и публичного облака. 
+									Возможна комбинация публичного облака и собственной ИТ-инфраструктуры.
+								p.
+									Согласно прогнозам, мировой рынок мультиоблачных сред к 2030 г. превысит 56 млрд долл. 
+									Среднегодовые темпы роста в прогнозном периоде составят 28%.
+						.article-part__col
+							.infographic
+								.infographic__title Мировой рынок <br> мультиоблачных <br> сред
+								.infographic__wrapper.infographic__wrapper--center
+									.infographic__col
+										.stat-column
+											.stat-progress
+												.stat-progress__value
+													span 28%
+													+icon('progress-up')(width='14', height='10')
+												.stat-progress__text cреднегодовые <br> темпы роста
+									.infographic__col
+										.stat-column
+											.stat-column__value <span>56</span> млрд $
+											.stat-column__pile(style='height: 121px;')
+											.stat-column__year 2030 год
+				.article-block__list.article-list
+					.article-list__title Драйверы тренда
+					ul.article-list__list
+						li Рост стоимости <br> инфраструктуры
+						li Пересмотр подходов в риск-менеджменте <br> и необходимость «второго плеча», требования ИБ
+						li Разные модели тарификации и продуктовые <br> линейки у разных провайдеров, возможность <br> существенной экономии
+						li Спрос от продвинутых пользователей облаков на использование сервисов публичных провайдеров, <br> которые отсутствуют у заказчика
+				.article-block__part.article-part
+					.article-part__top
+						h2.article-part__title Infrastructure as Code (IaC)
+						.article-part__years
+							span 2025
+							span 2030
+					.article-part__main
+						.article-part__col
+							.article-part__text
+								p.
+									Infrastructure as Code (IaC) — методология создания, управления и автоматизации инфраструктуры при помощи программного кода. 
+									У нее может быть два подхода — процедурный и функциональный. При первом подходе нужно ответить на вопрос: как изменить 
+									инфраструктуру и выстроить последовательность команд, чтобы получить желаемую конфигурацию? Во втором случае речь 
+									идет о подборе ресурсов — под существующую конфигурацию. То есть функциональный подход отвечает на вопрос: какие ресурсы  требуются?
+								p Методология ускоряет и упрощает развертывание и управление инфраструктурой. Поэтому популярность IaС растет год от года.
+						.article-part__col
+							.infographic
+								.infographic__title Мировой рынок IaС
+								.infographic__wrapper
+									.infographic__col
+										.stat-column
+											.stat-column__value <span>1,37</span> млрд $
+											.stat-column__pile.stat-column__pile--white(style='height: 22px;')
+											.stat-column__year 2023 год
+									.infographic__col
+										.stat-column
+											.stat-column__value <span>7,5</span> млрд $
+											.stat-column__pile(style='height: 121px;')
+											.stat-column__year 2030 год
+				.article-block__list.article-list
+					.article-list__title Драйверы тренда
+					ul.article-list__list
+						li Рост популярности мультиоблачных и гибридных сред, более простое управление ими с помощью IaC
+						li Поддержка инструментов IaC в облаках <br> крупнейших провайдеров
+						li Высокие трудозатраты и риски на развертывание инфраструктуры без автоматизации
+				.article-block__part.article-part
+					.article-part__top
+						h2.article-part__title Управление затратами на инфраструктуру
+						.article-part__years
+							span 2027
+							span 2030
+					.article-part__main
+						.article-part__col
+							.article-part__text
+								p.
+									Сравнение затрат на облако и on-premise — второй по значимости фактор для миграции в облако согласно исследованию Flexera. 
+									Если выбор в пользу облака сделан, то прибегают к практикам FinOps — то есть к управлению затратами на облачные сервисы. 
+									Эти практики помогают найти компромисс между финансовым и инженерным отделами компании. Условно говоря, инженеры часто забывают 
+									выключать свет или, напротив, нередко сидят в темноте, в то время как финансисты могут помочь не тратить попусту электричество 
+									и не допускать ситуаций, когда его не хватает. По данным Flexera, FinOps помогает оптимизировать использование облаков 51% компаний.
+								p.
+									За рубежом гиперскейлеры очень активно продвигают FinOps: у Amazon Web Services, Microsoft Azure, Google Cloud Platform есть решения 
+									и сервисы для управления затратами. Кроме того, развиваются нишевые ИТ-продукты и услуги для управления затратами в облаке и 
+									внедряется ИИ для анализа расходов и поиска возможностей оптимизации. В России же популяризация правил расчета ТСО происходит 
+									очень медленно. Подходы в этой области будут развиваться, но это станет возможным лишь на горизонте нескольких лет – по достижении 
+									более высокого уровня проникновения публичных облаков. Российский рынок отстает от мирового на 5-6 лет, в мире реальный интерес и 
+									бизнес-ценность FinOps компании начали ощущать в 2021-2022 гг., в России этот процесс будет происходить в 2026-2027 гг.
+						.article-part__col
+							.infographic
+								.infographic__title Мировой рынок IaС
+								.infographic__wrapper
+									.infographic__col
+										.stat-column
+											.stat-column__value <span>1,37</span> млрд $
+											.stat-column__pile.stat-column__pile--white(style='height: 22px;')
+											.stat-column__year 2023 год
+									.infographic__col
+										.stat-column
+											.stat-column__value <span>7,5</span> млрд $
+											.stat-column__pile(style='height: 121px;')
+											.stat-column__year 2030 год
 				a.article-block__link(href='/')
 					+icon('arrow-right')(width='20', height='25')
 					span Вернуться на главную

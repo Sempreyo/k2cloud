@@ -56,6 +56,10 @@
 		font-family: $secondFont;
 		font-weight: 300;
 		font-size: 16px;
+
+		p + p {
+			margin-top: 12px;
+		}
 	}
 
 	&__main {
@@ -67,11 +71,11 @@
 
 	&__col {
 		&:first-child {
-			width: calc(64% - 40px);
+			width: calc(63% - 40px);
 		}
 
 		&:last-child {
-			width: calc(36% - 40px);
+			width: calc(37% - 40px);
 		}
 	}
 }
