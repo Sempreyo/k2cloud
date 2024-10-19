@@ -1,0 +1,72 @@
+.quote {
+	display: flex;
+	gap: 30px;
+	background-color: $white;
+	padding: 45px 17px 66px 24px;
+
+	@include max(ti) {
+		flex-wrap: wrap;
+	}
+
+	@include max(t) {
+		justify-content: center;
+		gap: 20px;
+	}
+
+	&__text {
+		max-width: 500px;
+
+		@include max(ti) {
+			width: calc(100% - 154px);
+		}
+
+		@include max(t) {
+			width: 100%;
+		}
+
+		p + p {
+			margin-top: 10px;
+		}
+	}
+
+	&__person {
+		@include max(ti) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			order: -1;
+		}
+	}
+
+	&__image {
+		min-width: 120px;
+		max-width: 120px;
+		height: 120px;
+		border-radius: 24px;
+		background-color: $black;
+		overflow: hidden;
+		margin-bottom: 24px;
+
+		@include max(ti) {
+			margin-bottom: 10px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: bottom;
+		}
+	}
+
+	&__name,
+	&__position {
+		font-family: $secondFont;
+		font-size: 16px;
+
+		@include max(t) {
+			text-align: center;
+		}
+	}
+}

@@ -13,6 +13,7 @@
 /* Blocks */
 @import "blocks/container";
 @import "blocks/button";
+@import "blocks/button-up";
 @import "blocks/title";
 @import "blocks/hystmodal";
 @import "blocks/header";
@@ -34,8 +35,13 @@
 @import "blocks/tags";
 @import "blocks/stat-progress";
 @import "blocks/stat-column";
+@import "blocks/stat-description";
 @import "blocks/infographic";
+@import "blocks/quote";
+@import "blocks/answer";
+@import "blocks/question";
 @import "blocks/article-part";
 @import "blocks/article-annonce";
 @import "blocks/article-list";
 @import "blocks/article-block";
+@import "blocks/interview-block";

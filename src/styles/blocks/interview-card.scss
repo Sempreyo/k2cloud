@@ -5,6 +5,76 @@
 	border-radius: 40px;
 	overflow: hidden;
 
+	&--main {
+		overflow: visible;
+
+		@include max(d) {
+			overflow: hidden;
+		}
+
+		#{$parent} {
+			&__quote {
+				max-width: 500px;
+				color: $color-main;
+				font-weight: 400;
+				font-size: 46px;
+				line-height: 1;
+				margin-bottom: 41px;
+
+				@include max(d) {
+					font-size: fluid(30, 46, 992, 1280);
+				}
+
+				@include max(tl) {
+					max-width: 740px;
+					font-size: fluid(28, 30, 768, 992);
+				}
+
+				@include max(ti) {
+					font-size: fluid(25, 28, 0, 768);
+				}
+
+				&--big {
+					max-width: 740px;
+				}
+
+				br {
+					@include max(tl) {
+						display: none;
+					}
+				}
+			}
+
+			&__position {
+				margin-bottom: 0;
+			}
+
+			&__image {
+				max-width: 636px;
+				border-radius: 40px;
+				overflow: hidden;
+
+				@include max(d) {
+					max-width: 300px;
+					border-radius: 0;
+				}
+
+				@include max(tl) {
+					max-width: 200px;
+				}
+
+				@include max(t) {
+					max-width: 130px;
+				}
+			}
+
+			&__content {
+				padding-top: 111px;
+				padding-bottom: 27px;
+			}
+		}
+	}
+
 	&__link {
 		position: absolute;
 		inset: 0;

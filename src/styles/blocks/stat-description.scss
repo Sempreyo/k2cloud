@@ -1,0 +1,70 @@
+.stat-description {
+	@include max(t) {
+		margin: 0 auto;
+	}
+
+	&__item {
+		@include max(ti) {
+			text-align: center;
+		}
+
+		br {
+			@include max(tl) {
+				display: none;
+			}
+		}
+
+		p {
+			&:last-child {
+				font-family: $secondFont;
+				font-weight: 300;
+				font-size: 16px;
+			}
+
+			&:first-child {
+				font-family: $mainFont;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 1;
+
+				@include max(ti) {
+					display: flex;
+					flex-direction: column;
+				}
+
+				span {
+					font-size: 42px;
+				}
+			}
+		}
+	}
+
+	&__list-title {
+		font-size: 18px;
+		line-height: 1;
+		margin-top: 44px;
+
+		@include max(t) {
+			text-align: center;
+		}
+	}
+
+	&__list {
+		margin-top: 13px;
+
+		li {
+			color: $color-gray;
+			font-family: $secondFont;
+			font-weight: 300;
+			font-size: 16px;
+
+			@include max(t) {
+				text-align: center;
+			}
+
+			& + li {
+				margin-top: 10px;
+			}
+		}
+	}
+}

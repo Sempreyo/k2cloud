@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C3Solutions">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
+    <title>K2 Cloud</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logos"><a class="header__logo" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg></a><a class="header__logo-cn" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#logo-cn"></use>
+            </svg></a></div>
+        <div class="header__burger">
+          <div class="header__burger-line"></div>
+        </div>
+        <div class="header__menu-wrapper">
+          <div class="header__menu-close">
+            <svg width="30" height="30">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </div>
+          <ul class="header__menu">
+            <li><a class="anchor" href="#articles"><span>статьи</span></a></li>
+            <li><a class="anchor" href="#trends"><span>тренды</span></a></li>
+            <li><a class="anchor" href="#interview"><span>интервью</span></a></li>
+            <li><a class="anchor" href="#solutions"><span>решения</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="article-block">
+        <div class="article-block__top">
+          <div class="container">
+            <div class="article-annonce">
+              <picture class="article-annonce__image">
+                <source srcset="./images/article/annonce2.webp 1x, ./images/article/annonce2@2x.webp 2x" type="image/webp">
+                <source srcset="./images/article/annonce2.webp 1x, ./images/article/annonce2@2x.webp 2x" type="image/webp"><img src="./images/article/annonce2.png" srcset="./images/article/annonce2.png 1x, ./images/article/annonce2@2x.png 2x">
+              </picture>
+              <picture class="article-annonce__image-small">
+                <source srcset="./images/article/annonce2small.webp 1x, ./images/article/annonce2small@2x.webp 2x" type="image/webp">
+                <source srcset="./images/article/annonce2small.webp 1x, ./images/article/annonce2small@2x.webp 2x" type="image/webp"><img src="./images/article/annonce2small.png" srcset="./images/article/annonce2small.png 1x, ./images/article/annonce2small@2x.png 2x">
+              </picture>
+              <h1 class="article-annonce__title">Всепроникающая безопасность<span class="article-annonce__subtitle">какие облачные ИБ-решения будут наиболее востребованы и почему</span>
+                <div class="article-annonce__filler-angle"></div>
+                <div class="article-annonce__filler-angle-2"></div>
+              </h1>
+              <div class="article-annonce__text">
+                Вычислительные ресурсы предоставляются в аренду, разработка унифицируется, а рутинные задачи делегируются
+                ИИ — таковы главные тренды в ИТ последних и предстоящих лет. В целях оптимизации компании всё чаще предпочитают
+                использовать серверы и процессоры только по мере надобности и заменять собственную инфраструктуру на облачные
+                платформы. Какие тренды наиболее заметны и что выступает драйверами роста — в материале CNews.ru.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article-block__main">
+          <div class="container article-block__container">
+            <div class="article-block__tags tags">
+              <div class="tags__item">Безопасность контейнеров</div>
+              <div class="tags__item">DevSecOps в облаке</div>
+              <div class="tags__item">Киберхранилище</div>
+            </div>
+            <div class="article-block__part article-part">
+              <div class="article-part__top">
+                <h2 class="article-part__title">Безопасность контейнеров</h2>
+                <div class="article-part__years"><span>2025</span><span>2030</span></div>
+              </div>
+              <div class="article-part__main">
+                <div class="article-part__col">
+                  <div class="article-part__text">
+                    <p>
+                      Безопасность контейнеров — проблема массовая. Так, согласно исследованию RedHat, девять из десяти
+                      компаний столкнулись хотя бы с одним инцидентом безопасности, связанным с контейнерами или Kubernetes,
+                      а о потерях клиентов или доходов по тем же причинам заявили 46% опрошенных. Если говорить о России,
+                      то, по данным Positive Technologies, объем рынка этого класса продуктов составляет 2,5 млрд руб. и,
+                      согласно прогнозу, к 2026 году вырастет в три раза.
+                    </p>
+                    <p>
+                      Выстроить защиту контейнерных сред самостоятельно можно, но сложно. Во-первых, традиционные средства
+                      защиты часто несовместимы с контейнерными средами. Те же сканеры уязвимостей не могут должным образом
+                      анализировать события внутри контейнеров, а сервисы защиты веб-приложений не позволяют видеть
+                      межконтейнерный трафик. Во-вторых, безопасность контейнеров должна отвечать как ИБ-политике, так
+                      и бизнес-процессам компании. Права и ресурсы, запуск непроверенных контейнеров, опасные конфигурации
+                      оркестратора — всё требует тонкой настройки.
+                    </p>
+                    <p>
+                      Встроенные средства Kubernetes позволяют решить задачу, но только отчасти. Так, при помощи стандартных
+                      инструментов можно квотировать ресурсы, управлять ролями пользователей и обеспечивать логирование.
+                      Однако сканировать уязвимости или контролировать соответствие ИБ-политике они уже не позволяют. Можно,
+                      конечно, дополнить штатные средства точечными open source-решениями, но полноценную систему контейнерной
+                      безопасности таким способом выстроить всё равно не получится.
+                    </p>
+                    <p>
+                      Альтернативное решение — сервисы облачного провайдера. Здесь возможны два варианта на выбор: Managed
+                      Kubernetes и услуга по администрированию Kubernetes. Managed Kubernetes позволяет создавать и управлять
+                      EKS-кластерами Kubernetes с поддержкой динамического масштабирования. Сценарии использования сервиса
+                      могут быть разными — например, он отлично подойдет при внедрении микросервисов или при необходимости
+                      поддержки неравномерных нагрузок. В последнем случае играет роль именно качество масштабируемости. Ведь
+                      запуск дополнительных рабочих узлов позволяет быстро развернуть приложение в требуемом количестве экземпляров.
+                    </p>
+                    <p>
+                      Администрирование Kubernetes — комплекс услуг. Он включает развертывание и сопровождение инфраструктуры
+                      под создание бизнес-приложений на базе микросервисов и контейнеров. Услуга востребована по ряду причин,
+                      но миграция с зарубежных платформ оркестрации и запуск новых проектов, пожалуй, являются основными.
+                    </p>
+                    <p>
+                      Выбор в пользу того или иного сервиса зависит от специфики задач. Например, оба сервиса позволяют
+                      развернуть кластер в нескольких зонах доступности, но интеграцию прикладного ПО мониторинга или
+                      логирования предполагает только администрирование Kubernetes. В то же время автоматическое развертывание
+                      нажатием кнопки доступно в рамках Managed Kubernetes, но не администрирования.
+                    </p>
+                  </div>
+                </div>
+                <div class="article-part__col">
+                  <div class="infographic infographic--no-offset">
+                    <div class="infographic__wrapper">
+                      <div class="stat-description">
+                        <div class="stat-description__item">
+                          <p><span>46%</span></p>
+                          <p>потеряли клиентов или доходы <br> из-за инцидентов с контейнерами</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="infographic__wrapper">
+                      <div class="article-block__description stat-description">
+                        <div class="stat-description__item">
+                          <p><span>94%</span></p>
+                          <p>ИТ-специалистов сталкивались хотя <br> бы с одним инцидентом безопасности, <br> связанным с контейнерами</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="infographic">
+                    <div class="infographic__title infographic__title--offset">Рынок безопасности <br> контейнеров в России</div>
+                    <div class="infographic__wrapper">
+                      <div class="infographic__col">
+                        <div class="stat-column">
+                          <div class="stat-column__value"><span>2,5</span> млрд $</div>
+                          <div class="stat-column__pile stat-column__pile--white" style="height: 40px;"></div>
+                          <div class="stat-column__year">2023 год</div>
+                        </div>
+                      </div>
+                      <div class="infographic__col">
+                        <div class="stat-column">
+                          <div class="stat-column__value"><span>7,5</span> млрд $</div>
+                          <div class="stat-column__pile" style="height: 120px;"></div>
+                          <div class="stat-column__year">2026 год</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-block__list article-block__list--no-offset article-list">
+              <div class="article-list__title">Драйверы тренда</div>
+              <ul class="article-list__list">
+                <li>Активная адаптация контейнерных сред</li>
+                <li>Рост киберугроз и усиление внимания к ИБ</li>
+                <li>Растущее количество российских платформ контейнеризации</li>
+                <li>Требования регуляторов</li>
+                <li>Многоуровневая безопасность</li>
+              </ul>
+            </div>
+            <div class="article-block__quote quote">
+              <div class="quote__icon">
+                <svg width="124" height="70">
+                  <use xlink:href="./images/sprite.svg#quote"></use>
+                </svg>
+              </div>
+              <div class="quote__text">
+                <p>
+                  В настоящее время клиенты используют в основном классические инструменты анализа уязвимостей в образах и
+                  проверки конфигурации кластеров на CIS Benchmark, которые сложно интегрируются в процессы безопасности.
+                </p>
+                <p>
+                  Мы как визионер на рынке кибербезопасности видим будущее контейнерной безопасности в переходе к
+                  мониторингу и автоматизации реагирования на инциденты в контейнерах в рантайме, которое приведет
+                  к модернизации и тесной интеграции процессов ИБ, связанных с защитой облака.
+                </p>
+              </div>
+              <div class="quote__person">
+                <div class="quote__image"><img src="https://static.cnews.ru/img/cnews/2024/10/12/blizgarev.png" alt=""></div>
+                <div class="quote__name"><b>Михаил Бессараб</b></div>
+                <div class="quote__position">руководитель продукта <br> PT Container Security <br> Positive Technologies</div>
+              </div>
+            </div>
+            <div class="article-block__part article-part">
+              <div class="article-part__top">
+                <h2 class="article-part__title">DevSecOps в облаке</h2>
+                <div class="article-part__years"><span>2026</span><span>2030</span></div>
+              </div>
+              <div class="article-part__main">
+                <div class="article-part__col">
+                  <div class="article-part__text">
+                    <p>
+                      Безопасность контейнеров неразрывно связана с еще одним направлением — DevSecOps. Оно предполагает
+                      применение практик ИБ на всех этапах жизненного цикла ПО — от проектирования до развертывания.
+                      Разумеется, можно протестировать готовый продукт на предмет безопасности, но в случае обнаружения
+                      слабых мест в коде придется пройти по конвейеру разработки заново. Поэтому уязвимости лучше выявлять
+                      сразу — что и предполагает DevSecOps. Например, на этапе проектирования стоит внимательно отнестись
+                      к выбору среды исполнения кода, а на этапе разработки — сразу искать уязвимости в используемых библиотеках.
+                    </p>
+                    <p>
+                      DevSecOps в облаке — та же методология DevSecOps, но реализуемая на базе облачной платформы. Это удобно
+                      тем, что управлять безопасностью можно при помощи подключаемых инструментов. Особенно они упрощают защиту
+                      на последнем этапе, когда приложение развернуто и эксплуатируется в облачной инфраструктуре. В то же
+                      время облачные среды — сложные и многоуровневые. Отсюда и наличие характерных угроз безопасности. Например,
+                      сервисы могут быть сконфигурированы не в соответствии с ИБ-политикой, разграничение доступа — ошибочно
+                      спроектировано, а хранилище данных — не зашифровано. Всё это следует выявить и исключить заранее.
+                    </p>
+                    <p>
+                      Такие среды все чаще выстраиваются под ключ в собственной инфраструктуре или в частном облаке, но в
+                      долгосрочной перспективе в России, вероятно, среды DevSecOps будут переноситься в публичные
+                      облака – по аналогии с тем, как это происходит в мире. По оптимистичным прогнозам, к 2027 году
+                      российский рынок DevSecOps может вырастет до 56 млрд руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="article-part__col">
+                  <div class="infographic">
+                    <div class="infographic__title">Рост рынка <br> в России</div>
+                    <div class="infographic__wrapper">
+                      <div class="infographic__col">
+                        <div class="stat-column">
+                          <div class="stat-column__value"><span>9,5</span> млрд $</div>
+                          <div class="stat-column__pile stat-column__pile--white" style="height: 40px;"></div>
+                          <div class="stat-column__year">2023 год</div>
+                        </div>
+                      </div>
+                      <div class="infographic__col">
+                        <div class="stat-column">
+                          <div class="stat-column__value"><span>56</span> млрд $</div>
+                          <div class="stat-column__pile" style="height: 121px;"></div>
+                          <div class="stat-column__year">2027 год</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-block__list article-block__list--no-offset article-list">
+              <div class="article-list__title">Драйверы тренда</div>
+              <ul class="article-list__list">
+                <li>Выстроенные конвейеры DevOps</li>
+                <li>Фокус на вопросы безопасности, рост киберугроз</li>
+                <li>Нестабильный доступ к GitHub и опасения <br> относительно вредоносного кода в open source</li>
+                <li>Необходимость повышения эффективности <br> и скорости работы команд разработки при <br> растущем объеме задач</li>
+                <li>Требования комплаенса</li>
+                <li>Автоматизация безопасности</li>
+                <li>Растущая популярность подхода <br> Security as Code и Infrastructure as Code</li>
+              </ul>
+            </div>
+            <div class="quote">
+              <div class="quote__icon">
+                <svg width="124" height="70">
+                  <use xlink:href="./images/sprite.svg#quote"></use>
+                </svg>
+              </div>
+              <div class="quote__text">
+                <p>
+                  В этом году мы всё чаще сталкиваемся с необходимостью защиты контейнеризации и выстраивания процессов безопасной
+                  разработки. Однако заказчикам часто не хватает как квалифицированных специалистов, так и инфраструктурных
+                  ресурсов. На этом фоне возрастает спрос на облачные решения. Для этого есть несколько причин.
+                </p>
+                <p>
+                  Во-первых, число продуктов на рынке продолжает расти, но общедоступные бенчмарки отсутствуют, а в
+                  девелоперских командах зачастую нет необходимых экспертов по безопасности приложений (AppSec).
+                  Кроме того, рынок контейнеризации в России претерпел значительные изменения. Появилось много новых
+                  отечественных платформ, но у бизнеса пока нет полной уверенности в их защищенности. Тем временем
+                  злоумышленники становятся более активными, а их атаки — всё сложнее.
+                </p>
+                <p>
+                  В такой ситуации заказчики обращаются к партнёрам с собственной лабораторией, которая занимается
+                  исследованием, тестированием и внедрением вендорских продуктов. Бизнес ищет комплексную экспертизу:
+                  от аудита и разработки дорожных карт (roadmap) до внедрения решений и предоставления платформ для
+                  реализации аутсорсинговых задач.
+                </p>
+              </div>
+              <div class="quote__person">
+                <div class="quote__image"><img src="https://static.cnews.ru/img/cnews/2024/10/12/katolik.png" alt=""></div>
+                <div class="quote__name"><b>Вадим Католик</b></div>
+                <div class="quote__position">руководитель направления защиты бизнес-приложений <br> К2 Кибербезопасность</div>
+              </div>
+            </div>
+            <div class="article-block__quote quote">
+              <div class="quote__icon">
+                <svg width="124" height="70">
+                  <use xlink:href="./images/sprite.svg#quote"></use>
+                </svg>
+              </div>
+              <div class="quote__text">
+                <p>
+                  На протяжении многих лет отрасль разработки фактически игнорировала вопросы безопасности. Сегодня факт
+                  безопасности – отсутствия уязвимостей в коде – становится таким же критерием качества ПО, как и его
+                  функциональность. Все ИТ-компании со зрелой разработкой уже внедряют инструменты AppSec в процесс
+                  сборки продукта, независимо от отрасли и масштаба собственного бизнеса.
+                </p>
+              </div>
+              <div class="quote__person">
+                <div class="quote__image"><img src="https://static.cnews.ru/img/cnews/2024/10/12/antonov.png" alt=""></div>
+                <div class="quote__name"><b>Алексей Антонов</b></div>
+                <div class="quote__position">директор по развитию бизнеса безопасной разработки <br> Positive Technologies</div>
+              </div>
+            </div>
+            <div class="article-block__part article-part">
+              <div class="article-part__top">
+                <h2 class="article-part__title">Киберхранилище</h2>
+                <div class="article-part__years"><span>2025</span><span>2028</span></div>
+              </div>
+              <div class="article-part__main">
+                <div class="article-part__col">
+                  <div class="article-part__text">
+                    <p>
+                      Киберхранилище — хранилище с интегрированными функциями ИБ. В частности, оно защищает данные от атак
+                      программ-вымогателей на неструктурированные наборы данных, а также проводит анализ этих инцидентов и
+                      запускает процесс восстановления. Причем защита от атак выстроена на принципах раннего обнаружения
+                      и блокировки угроз.
+                    </p>
+                    <p>
+                      Причин востребованности киберхранилищ много, но цифры говорят сами за себя. Так, согласно ежегодному
+                      отчету Gartner от 2022 г., к 2025 году 60% компаний будут предъявлять спрос на встроенные механизмы
+                      защиты от программ-вымогателей, а к 2028 году их доля достигнет 100%. Для сравнения: в том же 2022 г.
+                      таковых было только 10%.
+                    </p>
+                    <p>
+                      Основной функционал таких хранилищ не требует разработки продукта с нуля, а может внедряться в
+                      существующие программные и программно-аппаратные комплексы (ПАК) для хранения – это создает
+                      возможности для быстрого проникновения и развития тренда. На мировом рынке уже существуют фичи
+                      киберхранилища в решениях крупнейших вендоров в области систем хранения (например, NetApp Ransomware Protection),
+                      а также киберхранилища от нишевых разработчиков (например, Superna).
+                    </p>
+                  </div>
+                </div>
+                <div class="article-part__col">
+                  <div class="infographic">
+                    <div class="infographic__title">Спрос на встроенные механизмы защиты от программ-вымогателей</div>
+                    <div class="infographic__wrapper">
+                      <div class="infographic__col">
+                        <div class="stat-column">
+                          <div class="stat-column__value"><span>10%</span></div>
+                          <div class="stat-column__pile stat-column__pile--white" style="height: 21px;"></div>
+                          <div class="stat-column__year">2022 год</div>
+                        </div>
+                      </div>
+                      <div class="infographic__col">
+                        <div class="stat-column">
+                          <div class="stat-column__value"><span>60%</span></div>
+                          <div class="stat-column__pile" style="height: 126px;"></div>
+                          <div class="stat-column__year">2025 год</div>
+                        </div>
+                      </div>
+                      <div class="infographic__col">
+                        <div class="stat-column">
+                          <div class="stat-column__value"><span>100%</span></div>
+                          <div class="stat-column__pile" style="height: 210px;"></div>
+                          <div class="stat-column__year">2028 год</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-block__list article-block__list--no-offset article-list">
+              <div class="article-list__title">Драйверы тренда</div>
+              <ul class="article-list__list">
+                <li>Частые атаки программ-вымогателей на хранилища и резервные копии</li>
+                <li>Сложности восстановления данных хранилища <br> после атак</li>
+              </ul>
+            </div>
+            <div class="article-block__quote quote">
+              <div class="quote__icon">
+                <svg width="124" height="70">
+                  <use xlink:href="./images/sprite.svg#quote"></use>
+                </svg>
+              </div>
+              <div class="quote__text">
+                <p>
+                  Киберхранилища – молодой тренд, лишь набирающий силу. Однако так как ИБ постепенно проникает во все
+                  направления информационных технологий, рано или поздно подобные интегрированные решения будут популярны
+                  и у нас. Потенциально подобный класс решений может быть востребован в отраслях, которые работают с
+                  чувствительной информацией, а также обрабатывают большие объемы персональных данных. Прежде всего,
+                  это госсектор, промышленность, транспорт, ритейл, телеком, здравоохранение и т.д.
+                </p>
+                <p>
+                  На данный момент есть множество решений для защиты конечных точек, но непосредственно для централизованных
+                  хранилищ данных также нужны инструменты, которые будут обеспечивать безопасность. И очень важна защита
+                  не только от внешнего злоумышленника, но и от внутреннего. В данном случае особенно актуальны решения
+                  класса DCAP, которые позволяют определять матрицу взаимодействия с конфиденциальной информацией внутри
+                  компании, классифицировать неструктурированные данные на сетевых ресурсах, а также защищать их, запрещая
+                  подозрительную активность.
+                </p>
+              </div>
+              <div class="quote__person">
+                <div class="quote__image"><img src="https://static.cnews.ru/img/cnews/2024/10/12/fiks.png" alt=""></div>
+                <div class="quote__name"><b>Александр Фикс</b></div>
+                <div class="quote__position">менеджер продукта <br> K2 Cloud</div>
+              </div>
+            </div><a class="article-block__link" href="/">
+              <svg width="20" height="25">
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg><span>на главную</span></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__col"><a class="footer__logo" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#logo-2"></use>
+            </svg></a>
+          <div class="footer__slogan">Управляем вашей инфраструктурой <br> и ускоряем бизнес</div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__contacts"><a class="footer__email" href="mailto:info@k2.cloud">info@k2.cloud</a><a class="footer__phone" href="tel:+74950193666">+7 (495) 019-36-66</a></div>
+          <ul class="footer__socials">
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="26" height="23">
+                  <use xlink:href="./images/sprite.svg#socials-bot"></use>
+                </svg></a></li>
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="23" height="20">
+                  <use xlink:href="./images/sprite.svg#socials-tg"></use>
+                </svg></a></li>
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="18" height="19">
+                  <use xlink:href="./images/sprite.svg#socials-habr"></use>
+                </svg></a></li>
+            <li><a class="footer__socials-icon" href="#">
+                <svg width="29" height="19">
+                  <use xlink:href="./images/sprite.svg#socials-yt"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/main.min.js"></script>
+</html>

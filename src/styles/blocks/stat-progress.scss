@@ -1,20 +1,42 @@
 .stat-progress {
-    &__value {
-        display: flex;
-        align-items: flex-start;
-        gap: 3px;
-        color: $color-main;
-        font-size: 42px;
-        line-height: 1.15;
+	@include max(t) {
+		margin: 0 auto;
+	}
 
-        svg {
-            color: $color-main;
-        }
-    }
+	&__subtitle {
+		font-family: $secondFont;
+		font-weight: 300;
+		font-size: 16px;
 
-    &__text {
-        font-family: $secondFont;
-        font-weight: 300;
-        font-size: 16px;
-    }
+		@include max(ti) {
+			text-align: center;
+		}
+	}
+
+	&__value {
+		display: flex;
+		align-items: flex-start;
+		gap: 3px;
+		color: $color-main;
+		font-size: 42px;
+		line-height: 1.15;
+
+		@include max(ti) {
+			justify-content: center;
+		}
+
+		svg {
+			color: $color-main;
+		}
+	}
+
+	&__text {
+		font-family: $secondFont;
+		font-weight: 300;
+		font-size: 16px;
+
+		@include max(ti) {
+			text-align: center;
+		}
+	}
 }

@@ -31,6 +31,12 @@
             @include max(t) {
                 width: 100%;
             }
+
+            br {
+                @include max(tl) {
+                    display: none;
+                }
+            }
         }
 
         &--columns-3 {
@@ -38,6 +44,14 @@
 
             li {
                 width: calc(33.3333% - 60px / 3 * 2);
+
+                @include max(tl) {
+                    width: calc(50% - 60px / 3 * 2);
+                }
+
+                @include max(t) {
+                    width: 100%;
+                }
             }
         }
     }

@@ -55,7 +55,7 @@
 		font-weight: 400;
 		font-size: 46px;
 		line-height: 1;
-		padding: 40px 62px 44px 42px;
+		padding: 40px 60px 44px 42px;
 
 		@include max(d) {
 			font-size: fluid(30, 46, 992, 1200);
@@ -88,6 +88,16 @@
 				border-bottom-right-radius: 0;
 			}
 		}
+	}
+
+	&__subtitle {
+		display: block;
+		font-family: $secondFont;
+		color: $white;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 1;
+		margin-top: 24px;
 	}
 
 	&__filler-angle,

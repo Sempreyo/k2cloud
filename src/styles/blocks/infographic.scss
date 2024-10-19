@@ -1,9 +1,27 @@
 .infographic {
+	$parent: &;
+
 	padding-top: 7px;
+
+	&--no-offset {
+		padding-top: 0;
+
+		#{$parent}__wrapper {
+			margin-top: 0;
+		}
+	}
 
 	&__title {
 		font-size: 18px;
 		line-height: 1;
+
+		@include max(ti) {
+			text-align: center;
+		}
+
+		&--offset {
+			margin-top: 58px;
+		}
 	}
 
 	&__wrapper {
@@ -12,13 +30,40 @@
 		gap: 4px;
 		margin-top: 12px;
 
+		@include max(ti) {
+			flex-direction: column;
+			align-items: center;
+			gap: 50px;
+		}
+
+		@include max(t) {
+			flex-direction: row;
+			align-items: flex-end;
+			max-width: 280px;
+			gap: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		&--center {
 			align-items: center;
+		}
+
+		&--top {
+			align-items: flex-start;
+
+			@include max(ti) {
+				align-items: center;
+			}
 		}
 	}
 
 	&__col {
 		width: calc(50% - 2px);
+
+		@include max(ti) {
+			width: 100%;
+		}
 	}
 
 	&__progress {
