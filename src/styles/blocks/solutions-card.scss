@@ -78,12 +78,6 @@
 		@include max(ti) {
 			font-size: 14px;
 		}
-
-		br {
-			@include max(d) {
-				display: none;
-			}
-		}
 	}
 
 	&__link {

@@ -16,16 +16,13 @@
 	&__bg {
 		position: absolute;
 		top: 21%;
-		left: 0;
+		left: -107px;
 		z-index: -1;
 		width: 100%;
 
 		@include max(tl) {
-			top: 30%;
-		}
-
-		@include max(ti) {
 			top: 23%;
+			left: 0;
 		}
 
 		img {
