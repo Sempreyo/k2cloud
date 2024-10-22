@@ -336,3 +336,123 @@ ol {
 	background-color: $color-main;
 	color: $white;
 }
+
+/* Custom fields */
+.ss-form-heading {
+	display: none;
+
+	& + span {
+		display: block;
+		margin-top: 20px;
+
+		& + .ss-form-inner {
+			display: none;
+		}
+	}
+}
+
+.ss-form form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	max-width: 932px;
+	margin-top: 45px;
+
+	@include max(ti) {
+		margin-top: 20px;
+	}
+}
+
+.ss-form-item {
+	display: flex;
+	flex-direction: column;
+	width: calc(50% - 10px);
+
+	@include max(ti) {
+		width: 100%;
+	}
+
+	&.ss-form-item-error .ss-form-input {
+		border-color: $color-red;
+	}
+
+	&--checkbox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.ss-item-label {
+	display: none;
+}
+
+.ss-form-input:not(.field--checkbox) {
+	width: 100%;
+	border: 1px solid $color-main;
+	border-radius: 30px;
+	padding: 25px 24px;
+	transition: 0.3s ease;
+
+	&::placeholder {
+		font-family: $secondFont;
+		color: $black;
+		font-weight: 300;
+		font-size: 16px;
+	}
+
+	&:focus,
+	&:hover {
+		background-color: rgba($color-main, 0.2);
+	}
+}
+
+.form-item-error {
+	order: 1;
+	font-size: 12px;
+	padding: 0 24px;
+	color: $color-red;
+	margin-top: 8px;
+}
+
+.ss-form-action,
+.form-item-recaptcha {
+	width: 100%;
+}
+
+.ss-form-submit {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 172px;
+	width: 100%;
+	padding: 15px 20px;
+	border-radius: 20px;
+	background-color: $color-main;
+	color: $black;
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s ease;
+	margin-top: 34px;
+
+	@include max(ti) {
+		margin-top: 20px;
+	}
+
+	&:hover {
+		background-color: rgba($color-main, 0.7);
+	}
+}
+
+.ss-form-report {
+	font-size: 30px;
+	margin: 30px 0;
+
+	@include max(ti) {
+		font-size: 24px;
+		margin: 20px 0;
+	}
+}

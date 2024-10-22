@@ -1,4 +1,6 @@
 .articles {
+	overflow: hidden;
+
 	&__wrapper {
 		display: flex;
 		gap: 8px;

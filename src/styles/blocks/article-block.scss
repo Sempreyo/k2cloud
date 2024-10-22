@@ -58,6 +58,10 @@
 		line-height: 1.3;
 		text-decoration: none;
 
+		&--top {
+			margin-bottom: 50px;
+		}
+
 		&:hover svg {
 			transform: translateX(5px);
 		}

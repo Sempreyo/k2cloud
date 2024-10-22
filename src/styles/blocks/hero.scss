@@ -43,6 +43,10 @@
 				width: calc(100% - 528px);
 			}
 
+			@include max(tl) {
+				width: calc(50% - 8px);
+			}
+
 			@include max(ti) {
 				flex-direction: column;
 				width: 100%;
@@ -50,13 +54,22 @@
 		}
 
 		&:last-child {
+			position: relative;
+			z-index: 1;
+			pointer-events: none;
+
 			@include max(d) {
 				max-width: 520px;
 				width: 100%;
 			}
 
+			@include max(tl) {
+				max-width: calc(50% - 8px);
+			}
+
 			@include max(ti) {
 				align-items: center;
+				max-width: 520px;
 				margin: 0 auto;
 			}
 		}
@@ -102,6 +115,7 @@
 	}
 
 	&__bottom {
+		flex-grow: 1;
 		padding: 42px 30px 110px 42px;
 
 		@include max(d) {
@@ -158,12 +172,6 @@
 
 	&__bg {
 		position: relative;
-
-		picture:first-child {
-			@include max(t) {
-				display: none;
-			}
-		}
 	}
 
 	&__bg-astronaut {
@@ -171,12 +179,15 @@
 		inset: -56px 0px -24px -91px;
 		max-width: 670px;
 		width: calc(100% + 150px);
+		opacity: 0;
+		transform: scale(0);
+		animation: objectShow 1s linear forwards;
 
 		@include max(t) {
-			position: relative;
-			inset: unset;
-			max-width: 670px;
-			width: 100%;
+			inset: -28px 0 -24px -45px;
+			width: calc(100% + 70px);
+			object-fit: contain;
+			object-position: center;
 		}
 	}
 }
