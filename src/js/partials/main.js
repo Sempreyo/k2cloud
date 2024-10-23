@@ -1,25 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const HEADER_SCROLL_BG = 50;
 	const HEADER_SCROLL_HIDE = 400;
-	function insertAfter(newNode, existingNode) {
-		existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-	}
-
-	let selectField = document.querySelector(".ss-item-type-select");
 	const report = document.querySelector(".ss-form-report");
-	const selects = $("select.ss-form-input");
+	const phoneWrap = $(".ss-item-type-tel");
 	const phoneField = $('.ss-form-input[type="tel"]');
-
-	if (selects && selects.length > 0 && !report) {
-		/* Первый элемент по умолчанию disabled */
-		const disabledOption = selects.find("option:first-child");
-		disabledOption.text("Предпочтительный способ связи");
-		disabledOption.attr("disabled", "true");
-
-		selects.select2({
-			minimumResultsForSearch: -1
-		});
-	}
 
 	/* Маска для телефона */
 	if (phoneField && phoneField.length > 0 && !report) {
@@ -27,12 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			showMaskOnHover: false
 		});
 	}
-	if (selectField) {
+	if (phoneWrap) {
 		const element = document.createElement("label");
 		element.classList.add("ss-form-item", "ss-form-item--checkbox");
 		element.innerHTML = '<ul class="ss-form-input field field--checkbox"><input type="checkbox" name="policy" required><b></b><span>Ознакомлен с <a href="https://www.cnews.ru/redirect.php?658111670ab154c994d" target="_blank">Политикой в области обработки персональных данных</a> и даю <a href="https://www.cnews.ru/redirect.php?906115670ab168430ee" target="_blank">согласие на их обработку</a></span></ul>';
 
-		insertAfter(element, selectField);
+		document.querySelector('form[class^="ss-form-"]').insertBefore(element, document.querySelector(".ss-form-action"));
 	}
 
 	const openNav = () => {
@@ -94,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					});
 				}
 
-				if (window.matchMedia("(max-width: 767px)").matches) {
+				if (window.matchMedia("(max-width: 767px)").matches && anchor.closest(".header__menu") !== null) {
 					openNav();
 				}
 			});
